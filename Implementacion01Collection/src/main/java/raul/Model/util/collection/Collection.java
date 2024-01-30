@@ -1,7 +1,7 @@
 package raul.Model.util.collection;
 
 import raul.Model.util.Iterator.Iterator;
-import raul.Model.util.Iterable.Iterable;
+import raul.Model.util.iterable.Iterable;
 
 public interface Collection<E> extends Iterable<E> {
     /**
@@ -61,7 +61,9 @@ public interface Collection<E> extends Iterable<E> {
 
     /**
      * Gets an iterator over the elements in the collection.
+     *
      * @return an iterator over the elements in the collection.
      */
     Iterator<E> iterator();
+
 }

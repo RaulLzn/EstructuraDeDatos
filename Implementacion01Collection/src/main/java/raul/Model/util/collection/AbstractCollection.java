@@ -1,5 +1,8 @@
 package raul.Model.util.collection;
 
+
+import raul.Model.util.Iterator.Iterator;
+
 public abstract class AbstractCollection<E> implements Collection<E>, Cloneable {
 
     protected abstract E[] getInternalCollection();
@@ -34,8 +37,9 @@ public abstract class AbstractCollection<E> implements Collection<E>, Cloneable 
     }
 
     public boolean contains(Collection<E> collection) {
-        E[] internalCollection = getInternalCollection();
-        for (E element : collection) {
+        Iterator<E> collectionIterator = collection.iterator();
+        while (collectionIterator.hasNext()) {
+            E element = collectionIterator.next();
             if (!contains(element)) {
                 return false;
             }

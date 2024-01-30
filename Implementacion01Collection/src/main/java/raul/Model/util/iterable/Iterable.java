@@ -1,4 +1,4 @@
-package raul.Model.util.Iterable;
+package raul.Model.util.iterable;
 
 import java.util.function.Function;
 
