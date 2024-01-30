@@ -1,1 +1,1 @@
-# EstrcuturaDeDatos
+# EstructuraDeDatos
