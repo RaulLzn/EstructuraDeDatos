@@ -3,6 +3,11 @@ package raul.Model.util.collection;
 import raul.Model.util.Iterator.Iterator;
 import raul.Model.util.iterable.Iterable;
 
+/**
+ * This interface represents a collection of elements.
+ * @param <E>
+ */
+
 public interface Collection<E> extends Iterable<E> {
     /**
      * Removes all elements from the collection.
