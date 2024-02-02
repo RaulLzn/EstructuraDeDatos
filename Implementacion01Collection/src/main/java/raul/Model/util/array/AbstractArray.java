@@ -1,21 +1,12 @@
 package raul.Model.util.array;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import raul.Model.util.Iterator.Iterator;
 import raul.Model.util.collection.Collection;
 
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable {
-
-    private E[] elements;
-
-    public AbstractArray(int size) {
-        this.elements = (E[]) new Object[size];
-    }
+public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
 
     /**
      * Inserts the specified element at the clear position in this collection.
@@ -25,16 +16,7 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable {
      */
     @Override
     public boolean add(E element) {
-        for (int ii = 0; ii < elements.length; ii++) {
-            try {
-                if (elements[ii] == null) {
-                    elements[ii] = element;
-                    return true;
-                }
-            } catch (ArrayIndexOutOfBoundsException e) {
-                return false;
-            }
-        }
+        return false;
     }
 
     /**
@@ -46,16 +28,6 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable {
      */
     @Override
     public boolean add(int index, E[] array) {
-        if (index < elements.length && index >= 0 && array.length <= elements.length && (array.length + index) <= elements.length) {
-            try {
-                for (int i = 0; i < array.length; i++) {
-                    elements[index + i] = array[i];
-                }
-                return true;
-            } catch (Exception e) {
-                Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
-            }
-        }
         return false;
     }
 
@@ -66,23 +38,8 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable {
      * @param collection The collection containing elements to be added to this collection.
      * @return 'true' if the collection was added successfully, otherwise 'false'.
      */
-
     @Override
     public boolean add(int index, Collection<E> collection) {
-        Iterator<E> collectionIterator = collection.iterator();
-        int i = 0;
-        if (index < elements.length && index >= 0 && this.elements.length <= collection.size() && (collection.size() + index) <= elements.length) {
-            try {
-                while (collectionIterator.hasNext()) {
-                    E element = collectionIterator.next();
-                    elements[index + i] = element;
-                    i++;
-                }
-                return true;
-            } catch (Exception e) {
-                Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
-            }
-        }
         return false;
     }
 

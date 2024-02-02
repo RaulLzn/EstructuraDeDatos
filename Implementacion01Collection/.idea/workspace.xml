@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d08aed-4bf5-4ec1-bbe3-8437b717cdc6" name="Changes" comment="" />
+    <list default="true" id="61d08aed-4bf5-4ec1-bbe3-8437b717cdc6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +96,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/raul/UpbRepositorios/Estructuras",
+    "last_opened_file_path": "/home/raul/UpbRepositorios/EstructurasCamilo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -125,7 +130,10 @@
       <workItem from="1706624231708" duration="1597000" />
       <workItem from="1706627074377" duration="5329000" />
       <workItem from="1706635461364" duration="2045000" />
-      <workItem from="1706637569834" duration="2872000" />
+      <workItem from="1706637569834" duration="3004000" />
+      <workItem from="1706820331276" duration="4240000" />
+      <workItem from="1706827110677" duration="1121000" />
+      <workItem from="1706898910998" duration="3866000" />
     </task>
     <task id="LOCAL-00001" summary="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java">
       <option name="closed" value="true" />
