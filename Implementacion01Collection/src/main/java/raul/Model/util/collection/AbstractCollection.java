@@ -19,11 +19,12 @@ public abstract class AbstractCollection<E> implements Collection<E>, Cloneable 
      * Clears all elements from the collection.
      * @return 'true' if the collection was cleared successfully, otherwise 'false'.
      */
+    @Override
     public boolean clear() {
         E[] internalCollection = getInternalCollection();
         boolean trueClear = internalCollection.length > 0;
-        for (int i = 0; i < internalCollection.length; i++) {
-            internalCollection[i] = null;
+        for (int ii = 0; ii < internalCollection.length; ii++) {
+            internalCollection[ii] = null;
         }
         return trueClear;
     }
@@ -33,6 +34,7 @@ public abstract class AbstractCollection<E> implements Collection<E>, Cloneable 
      * @param element The element to search for.
      * @return 'true' if the collection contains the specified element, otherwise 'false'.
      */
+    @Override
     public boolean contains(E element) {
         E[] internalCollection = getInternalCollection();
         for (E e : internalCollection) {
@@ -48,6 +50,7 @@ public abstract class AbstractCollection<E> implements Collection<E>, Cloneable 
      * @param array The array containing elements to be searched for in this collection.
      * @return 'true' if the collection contains all specified elements, otherwise 'false'.
      */
+    @Override
     public boolean contains(E[] array) {
         E[] internalCollection = getInternalCollection();
         for (E e : array) {
@@ -63,6 +66,7 @@ public abstract class AbstractCollection<E> implements Collection<E>, Cloneable 
      * @param collection The collection containing elements to be searched for in this collection.
      * @return 'true' if the collection contains all specified elements, otherwise 'false'.
      */
+    @Override
     public boolean contains(Collection<E> collection) {
         Iterator<E> collectionIterator = collection.iterator();
         while (collectionIterator.hasNext()) {
@@ -78,6 +82,7 @@ public abstract class AbstractCollection<E> implements Collection<E>, Cloneable 
      * Checks if the collection is empty.
      * @return 'true' if the collection contains no elements, otherwise 'false'.
      */
+    @Override
     public boolean isEmpty() {
         E[] internalCollection = getInternalCollection();
         return internalCollection.length == 0;
@@ -87,6 +92,7 @@ public abstract class AbstractCollection<E> implements Collection<E>, Cloneable 
      * Reverses the order of elements in the collection.
      * @return 'true' if the collection was reversed successfully, otherwise 'false'.
      */
+    @Override
     public boolean reverse() {
         E[] internalCollection = getInternalCollection();
         int size = internalCollection.length;

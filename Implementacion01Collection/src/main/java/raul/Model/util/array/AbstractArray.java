@@ -5,8 +5,20 @@ import raul.Model.util.collection.Collection;
 
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
+
+    private E[] elements;
+
+    /**
+     *
+     * @param dimension
+     */
+    public AbstractArray(int dimension) {
+        this.elements = (E[]) new Object[dimension];
+    }
 
     /**
      * Inserts the specified element at the clear position in this collection.
@@ -16,6 +28,19 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
      */
     @Override
     public boolean add(E element) {
+        if (element == null) {
+            return false;
+        }
+        for (int ii = 0; ii < elements.length; ii++) {
+            if (elements[ii] == null) {
+                try {
+                    elements[ii] = element;
+                    return true;
+                } catch (Exception e) {
+                    Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+                }
+            }
+        }
         return false;
     }
 
@@ -28,6 +53,22 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
      */
     @Override
     public boolean add(int index, E[] array) {
+        if(index < 0 || index > elements.length || array == null) {
+            return false;
+        }
+        int remaingSpace = elements.length - index;
+        if (remaingSpace < array.length) {
+            return false;
+        }
+        try {
+            for (int ii = 0; ii < array.length; ii++) {
+                elements[index + ii] = array[ii];
+            }
+            return true;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
+
         return false;
     }
 
@@ -40,6 +81,24 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
      */
     @Override
     public boolean add(int index, Collection<E> collection) {
+        if (index < 0 || index > elements.length || collection == null) {
+            return false;
+        }
+        int remaingSpace = elements.length - index;
+        if (remaingSpace < collection.size()) {
+            return false;
+        }
+        try {
+            Iterator<E> collectionIterator = collection.iterator();
+            int ii = 0;
+            while (collectionIterator.hasNext()) {
+                elements[index + ii] = collectionIterator.next();
+                ii++;
+            }
+            return true;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return false;
     }
 
@@ -48,7 +107,20 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
      */
     @Override
     public void defragment() {
+        try {
 
+            int noNullCount = 0;
+            for (int ii = 0; ii < elements.length; ii++) {
+                if (elements[ii] != null){
+                    elements[noNullCount] = elements[ii];
+                }
+            }
+            for (int ii = noNullCount; ii < elements.length; ii++) {
+                elements[ii] = null;
+            }
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
     }
 
     /**
@@ -59,6 +131,13 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
      */
     @Override
     public E get(int index) {
+        try {
+            if (index >= 0 & index < elements.length) {
+                return elements[index];
+            }
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return null;
     }
 
@@ -70,7 +149,17 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
      */
     @Override
     public int indexOf(E element) {
-        return 0;
+        try {
+            for (int ii = 0; ii < elements.length; ii++) {
+                if ((elements[ii] == null && element == null) || (elements[ii] != null && elements[ii].equals(element))) {
+                    return ii;
+                }
+            }
+            return -1;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
+        return -1;
     }
 
     /**
@@ -81,7 +170,17 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
      */
     @Override
     public int lastIndexOf(E element) {
-        return 0;
+        try {
+            for (int ii = elements.length - 1; ii >= 0; ii--) {
+                if ((elements[ii] == null && element == null) || (elements[ii] != null && elements[ii].equals(element))) {
+                    return ii;
+                }
+            }
+            return -1;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
+        return -1;
     }
 
     /**
@@ -92,6 +191,16 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
      */
     @Override
     public boolean remove(int index) {
+        try {
+            if (index < 0 || index > elements.length) {
+                return false;
+            }
+            elements[index] = null;
+            defragment();
+            return true;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return false;
     }
 
@@ -103,6 +212,17 @@ public class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
      */
     @Override
     public boolean remove(Predicate<E> filter) {
+        try {
+            for (int ii = 0; ii < elements.length; ii++) {
+                if (elements[ii] != null & filter.test(elements[ii])) {
+                    elements[ii] = null;
+                    defragment();
+                    return true;
+                }
+            }
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return false;
     }
 
