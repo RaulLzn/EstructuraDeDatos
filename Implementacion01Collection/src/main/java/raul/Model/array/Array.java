@@ -1,6 +1,7 @@
-package raul.Model.util.array;
+package raul.Model.array;
 
 import raul.Model.util.Iterator.Iterator;
+import raul.Model.util.array.AbstractArray;
 import raul.Model.util.collection.Collection;
 
 import java.util.function.Function;
@@ -8,16 +9,18 @@ import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public abstract class AbstractArray<E> implements Array<E>, Collection<E>, Cloneable{
+/**
+ * This class represents a collection of elements that can be accessed by an index.
+ * @param <E>
+ */
+public class Array<E> extends AbstractArray<E> {
 
-    protected E[] elements;
 
     /**
-     *
      * @param dimension
      */
-    public AbstractArray(int dimension) {
-        this.elements = (E[]) new Object[dimension];
+    public Array(int dimension) {
+        super(dimension);
     }
 
     /**
@@ -56,8 +59,8 @@ public abstract class AbstractArray<E> implements Array<E>, Collection<E>, Clone
         if(index < 0 || index > elements.length || array == null) {
             return false;
         }
-        int remaingSpace = elements.length - index;
-        if (remaingSpace < array.length) {
+        int remainingSpace = elements.length - index;
+        if (remainingSpace < array.length) {
             return false;
         }
         try {
@@ -68,7 +71,6 @@ public abstract class AbstractArray<E> implements Array<E>, Collection<E>, Clone
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
-
         return false;
     }
 
@@ -452,7 +454,7 @@ public abstract class AbstractArray<E> implements Array<E>, Collection<E>, Clone
      */
     @Override
     public Iterator<E> iterator() {
-return new Iterator<E>() {
+        return new Iterator<E>() {
             private int index = 0;
 
             @Override
@@ -469,10 +471,7 @@ return new Iterator<E>() {
 
     @Override
     public AbstractArray<E> clone() {
-        try {
-            return (AbstractArray) super.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new AssertionError();
-        }
+        return (AbstractArray) super.clone();
     }
+
 }
