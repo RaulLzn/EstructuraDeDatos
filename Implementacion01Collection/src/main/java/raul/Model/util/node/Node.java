@@ -2,9 +2,9 @@ package raul.Model.util.node;
 
 public interface Node<E> {
 
-    public void sett (E element);
+    public void set (E element);
 
-    public E gett();
+    public E get();
 
     public String toString();
 }

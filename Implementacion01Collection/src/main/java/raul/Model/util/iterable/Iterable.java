@@ -4,7 +4,7 @@ import java.util.function.Function;
 
 import raul.Model.util.Iterator.Iterator;
 
-public interface Iterable <E> {
+public interface Iterable<E> {
 
     /**
      * For each element in the iterator, executes the specified action.

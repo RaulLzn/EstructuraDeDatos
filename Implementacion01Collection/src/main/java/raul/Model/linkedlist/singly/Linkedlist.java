@@ -14,12 +14,18 @@ public class Linkedlist<E> extends AbstractList<E> {
 
     private LinkedNode<E> head;
     private LinkedNode<E> tail;
-    private int size;
+    private LinkedNode<E> inode;
 
     public Linkedlist() {
+        super();
         head = null;
         tail = null;
         size = 0;
+    }
+
+    public Linkedlist(E element) {
+        super();
+        add(element);
     }
 
 
@@ -78,7 +84,7 @@ public class Linkedlist<E> extends AbstractList<E> {
      */
     @Override
     public boolean isEmpty() {
-        return false;
+        return head == null && tail == null && size == 0;
     }
 
     /**
@@ -119,7 +125,22 @@ public class Linkedlist<E> extends AbstractList<E> {
      */
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return new Iterator<E>() {
+            @Override
+            public boolean hasNext() {
+                return inode != null;
+            }
+
+            @Override
+            public E next() {
+                if (!hasNext()) {
+                    throw new java.util.NoSuchElementException("No more elements to iterate");
+                }
+                E element = inode.get();
+                inode = inode.getNext();
+                return element;
+            }
+        };
     }
 
     /**
@@ -130,6 +151,23 @@ public class Linkedlist<E> extends AbstractList<E> {
      */
     @Override
     public boolean add(E element) {
+        LinkedNode<E> node = new LinkedNode<>(element);
+        try {
+            node.set(element);
+            if (head == null) {
+                head = node;
+                tail = node;
+                size++;
+            } else {
+                tail.setNext(node);
+                tail = node;
+                size++;
+            }
+            return true;
+        }
+        catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
+        }
         return false;
     }
 

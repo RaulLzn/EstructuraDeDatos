@@ -17,15 +17,15 @@ public abstract class AbstractNode<E> implements Node<E>, Cloneable {
      * @param element
      */
     @Override
-    public void sett(E element) {
-
+    public void set(E element) {
+        this.element = element;
     }
 
     /**
      * @return
      */
     @Override
-    public E gett() {
+    public E get() {
         return null;
     }
 
