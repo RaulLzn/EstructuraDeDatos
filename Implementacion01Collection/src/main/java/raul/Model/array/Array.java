@@ -22,7 +22,7 @@ public class Array<E> extends AbstractArray<E> {
      * @param dimension
      */
     public Array(int dimension) {
-        super(dimension);
+        this.elements = (E[]) new Object[dimension];
     }
 
     public Array(E[] elements) {
