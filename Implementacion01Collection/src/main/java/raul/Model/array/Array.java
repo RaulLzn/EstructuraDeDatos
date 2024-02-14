@@ -16,6 +16,8 @@ import java.util.logging.Logger;
 public class Array<E> extends AbstractArray<E> {
 
 
+    private E[] elements;
+
     /**
      * @param dimension
      */
