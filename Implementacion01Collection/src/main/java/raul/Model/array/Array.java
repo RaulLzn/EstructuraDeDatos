@@ -25,6 +25,10 @@ public class Array<E> extends AbstractArray<E> {
         super(dimension);
     }
 
+    public Array(E[] elements) {
+        this.elements = elements;
+    }
+
     /**
      * Inserts the specified element at the clear position in this collection.
      *

@@ -229,7 +229,7 @@
       <workItem from="1707863643570" duration="314000" />
       <workItem from="1707884937506" duration="2053000" />
       <workItem from="1707922221154" duration="1329000" />
-      <workItem from="1707930254863" duration="2407000" />
+      <workItem from="1707930254863" duration="2501000" />
     </task>
     <task id="LOCAL-00001" summary="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java">
       <option name="closed" value="true" />
