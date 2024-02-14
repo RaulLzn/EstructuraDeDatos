@@ -48,7 +48,7 @@ class LinkedlistTest {
 
     @Test
     void testAdd() {
-        Linkedlist<Integer> list = new Linkedlist<>();
+        LinkedList<Integer> list = new LinkedList<>();
         assertTrue(list.add(23));
         assertTrue(list.add(30));
         assertTrue(list.add(20));

@@ -9,21 +9,23 @@ import raul.Model.util.list.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-public class Linkedlist<E> extends AbstractList<E> {
+public class LinkedList<E> extends AbstractList<E> {
 
     private LinkedNode<E> head;
     private LinkedNode<E> tail;
     private LinkedNode<E> inode;
 
-    public Linkedlist() {
+    public LinkedList() {
         super();
         head = null;
         tail = null;
         size = 0;
     }
 
-    public Linkedlist(E element) {
+    public LinkedList(E element) {
         super();
         add(element);
     }
@@ -126,6 +128,8 @@ public class Linkedlist<E> extends AbstractList<E> {
     @Override
     public Iterator<E> iterator() {
         return new Iterator<E>() {
+
+            private LinkedNode<E> inode = head;
             @Override
             public boolean hasNext() {
                 return inode != null;
@@ -166,7 +170,7 @@ public class Linkedlist<E> extends AbstractList<E> {
             return true;
         }
         catch (Exception e) {
-            System.err.println("Error: " + e.getMessage());
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
         return false;
     }
@@ -179,6 +183,15 @@ public class Linkedlist<E> extends AbstractList<E> {
      */
     @Override
     public boolean add(E[] array) {
+        try {
+            for (E element : array) {
+                add(element);
+            }
+            return true;
+        }
+        catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return false;
     }
 
@@ -189,7 +202,20 @@ public class Linkedlist<E> extends AbstractList<E> {
      * @return 'true' if the collection was added successfully, otherwise 'false'.
      */
     @Override
-    public boolean add(java.util.Collection<E> collection) {
+    public boolean add(Collection<E> collection) {
+        try {
+            LinkedList<E> newList = new LinkedList<>();
+            Iterator<E> iterator = collection.iterator();
+            while (iterator.hasNext()) {
+                E element = iterator.next();
+                newList.add(element);
+            }
+            tail.setNext(newList.head);
+            tail = newList.tail;
+            return true;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return false;
     }
 
@@ -201,6 +227,18 @@ public class Linkedlist<E> extends AbstractList<E> {
      */
     @Override
     public boolean addFirst(E element) {
+        try {
+            LinkedNode<E> newNode = new LinkedNode<>(element);
+            newNode.setNext(head);
+            head = newNode;
+            if (tail == null) {
+                tail = newNode;
+            }
+            size++;
+            return true;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return false;
     }
 
@@ -212,6 +250,14 @@ public class Linkedlist<E> extends AbstractList<E> {
      */
     @Override
     public boolean addFirst(E[] array) {
+        try {
+            for (int i = array.length - 1; i >= 0; i--) {
+                addFirst(array[i]);
+            }
+            return true;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return false;
     }
 
@@ -222,7 +268,21 @@ public class Linkedlist<E> extends AbstractList<E> {
      * @return 'true' if the collection was added successfully, otherwise 'false'.
      */
     @Override
-    public boolean addFirst(java.util.Collection<E> collection) {
+    public boolean addFirst(Collection<E> collection) {
+        try {
+            LinkedList<E> newList = new LinkedList<>();
+            Iterator<E> iterator = collection.iterator();
+            while (iterator.hasNext()) {
+                E element = iterator.next();
+                newList.addFirst(element);
+            }
+            newList.tail.setNext(head);
+            head = newList.head;
+            size += newList.size;
+            return true;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return false;
     }
 
@@ -233,6 +293,13 @@ public class Linkedlist<E> extends AbstractList<E> {
      */
     @Override
     public E peek() {
+        try {
+            if (head != null) {
+                return head.get();
+            }
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return null;
     }
 
@@ -243,6 +310,13 @@ public class Linkedlist<E> extends AbstractList<E> {
      */
     @Override
     public E peekLast() {
+        try {
+            if (tail != null) {
+                return tail.get();
+            }
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return null;
     }
 
@@ -254,6 +328,25 @@ public class Linkedlist<E> extends AbstractList<E> {
      */
     @Override
     public E[] peekArray(int n) {
+        try {
+            if (head == null || n <= 0) {
+                return null;
+            }
+
+            E[] resultArray = (E[]) new Object[n];
+            LinkedNode<E> current = head;
+            int count = 0;
+
+            while (current != null && count < n) {
+                resultArray[count] = current.get();
+                current = current.getNext();
+                count++;
+            }
+
+            return resultArray;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
         return null;
     }
 
@@ -383,7 +476,7 @@ public class Linkedlist<E> extends AbstractList<E> {
      * @return 'true' if the collection elements were removed successfully, otherwise 'false'.
      */
     @Override
-    public boolean remove(java.util.Collection<E> collection) {
+    public boolean remove(Collection<E> collection) {
         return false;
     }
 
@@ -433,7 +526,7 @@ public class Linkedlist<E> extends AbstractList<E> {
      * @return 'true' if elements were replaced successfully, otherwise 'false'.
      */
     @Override
-    public boolean replace(java.util.Collection<E> collection, java.util.Collection<E> newCollection, Predicate<E> comparator) {
+    public boolean replace(Collection<E> collection, Collection<E> newCollection, Predicate<E> comparator) {
         return false;
     }
 
@@ -455,7 +548,7 @@ public class Linkedlist<E> extends AbstractList<E> {
      * @return 'true' if elements were retained successfully, otherwise 'false'.
      */
     @Override
-    public boolean retain(java.util.Collection<E> collection) {
+    public boolean retain(Collection<E> collection) {
         return false;
     }
 

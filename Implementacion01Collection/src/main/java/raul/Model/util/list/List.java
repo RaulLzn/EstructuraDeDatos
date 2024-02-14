@@ -1,6 +1,6 @@
 package raul.Model.util.list;
 
-import java.util.Collection;
+import raul.Model.util.collection.Collection;
 import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
 

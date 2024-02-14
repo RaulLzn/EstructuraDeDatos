@@ -61,11 +61,18 @@ public class Array<E> extends AbstractArray<E> {
         }
         int remainingSpace = elements.length - index;
         if (remainingSpace < array.length) {
+            int spaceForIndex = 0;
+            for (int ii = 0; ii < remainingSpace; ii++) {
+                spaceForIndex++;
+            }
+            for (int ii = index; ii < spaceForIndex; ii++) {
+                elements[index] = array[ii];
+            }
             return false;
         }
         try {
             for (int ii = 0; ii < array.length; ii++) {
-                elements[index + ii] = array[ii];
+                elements[index] = array[ii];
             }
             return true;
         } catch (Exception e) {
