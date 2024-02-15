@@ -1,7 +1,10 @@
 package raul.Model.util.list;
+import raul.Model.util.Iterator.Iterator;
 import raul.Model.util.collection.Collection;
 
-public abstract class AbstractList<E> implements List<E>, Collection<E>, Cloneable {
+import java.util.function.Function;
+
+public abstract class  AbstractList<E> implements List<E>, Collection<E>, Cloneable {
 
     protected int size;
 
@@ -9,16 +12,17 @@ public abstract class AbstractList<E> implements List<E>, Collection<E>, Cloneab
         this.size = 0;
     }
 
+    @Override
     public int size() {
         return size;
     }
 
     @Override
-    public AbstractList<E> clone() {
-        try {
-            return (AbstractList) super.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new AssertionError();
+    public void forEach(Function<E, Void> action) {
+        Iterator<E> iterator=this.iterator();
+        while(iterator.hasNext()) {
+            action.apply(iterator.next());
         }
     }
+
 }

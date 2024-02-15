@@ -17,7 +17,7 @@ public interface List<E> {
      * @param element The element to be appended to this list.
      * @return 'true' if the element was added successfully, otherwise 'false'.
      */
-    boolean add(E element);
+    public boolean add(E element);
 
     /**
      * Appends all of the elements in the specified array to the end of this list.
@@ -25,7 +25,7 @@ public interface List<E> {
      * @param array The array containing elements to be added to this list.
      * @return 'true' if the array was added successfully, otherwise 'false'.
      */
-    boolean add(E[] array);
+    public boolean add(E[] array);
 
     /**
      * Appends all of the elements in the specified collection to the end of this list.
@@ -33,7 +33,7 @@ public interface List<E> {
      * @param collection The collection containing elements to be added to this list.
      * @return 'true' if the collection was added successfully, otherwise 'false'.
      */
-    boolean add(Collection<E> collection);
+   public boolean add(Collection<E> collection);
 
     /**
      * Appends the specified element at the beginning of this list.
@@ -41,7 +41,7 @@ public interface List<E> {
      * @param element The element to be appended at the beginning of this list.
      * @return 'true' if the element was added successfully, otherwise 'false'.
      */
-    boolean addFirst(E element);
+   public boolean addFirst(E element);
 
     /**
      * Appends all of the elements in the specified array at the beginning of this list.
@@ -49,7 +49,7 @@ public interface List<E> {
      * @param array The array containing elements to be added at the beginning of this list.
      * @return 'true' if the array was added successfully, otherwise 'false'.
      */
-    boolean addFirst(E[] array);
+   public boolean addFirst(E[] array);
 
     /**
      * Appends all of the elements in the specified collection at the beginning of this list.
@@ -57,21 +57,21 @@ public interface List<E> {
      * @param collection The collection containing elements to be added at the beginning of this list.
      * @return 'true' if the collection was added successfully, otherwise 'false'.
      */
-    boolean addFirst(Collection<E> collection);
+   public boolean addFirst(Collection<E> collection);
 
     /**
      * Retrieves, but does not remove, the head (first element) of this list.
      *
      * @return The first element of this list.
      */
-    E peek();
+   public E peek();
 
     /**
      * Retrieves, but does not remove, the last element of this list.
      *
      * @return The last element of this list.
      */
-    E peekLast();
+   public E peekLast();
 
     /**
      * Retrieves, but does not remove, the first n elements of the list.
@@ -79,7 +79,7 @@ public interface List<E> {
      * @param n The number of elements to retrieve.
      * @return An array containing the first n elements of the list.
      */
-    E[] peekArray(int n);
+   public E[] peekArray(int n);
 
     /**
      * Retrieves, but does not remove, the last n elements of the list.
@@ -87,7 +87,7 @@ public interface List<E> {
      * @param n The number of elements to retrieve.
      * @return An array containing the last n elements of the list.
      */
-    E[] peekLastArray(int n);
+   public E[] peekLastArray(int n);
 
     /**
      * Retrieves, but does not remove, the first n elements of the list.
@@ -95,7 +95,7 @@ public interface List<E> {
      * @param n The number of elements to retrieve.
      * @return A list containing the first n elements of the list.
      */
-    List<E> peekCollection(int n);
+   public List<E> peekCollection(int n);
 
     /**
      * Retrieves, but does not remove, the last n elements of the list.
@@ -103,21 +103,21 @@ public interface List<E> {
      * @param n The number of elements to retrieve.
      * @return A list containing the last n elements of the list.
      */
-    List<E> peekLastCollection(int n);
+   public List<E> peekLastCollection(int n);
 
     /**
      * Retrieves and removes the head (first element) of this list.
      *
      * @return The first element of this list.
      */
-    E poll();
+   public E poll();
 
     /**
      * Retrieves and removes the last element of this list.
      *
      * @return The last element of this list.
      */
-    E pollLast();
+   public E pollLast();
 
     /**
      * Retrieves and removes the first n elements of the list.
@@ -125,7 +125,7 @@ public interface List<E> {
      * @param n The number of elements to retrieve and remove.
      * @return An array containing the first n elements of the list.
      */
-    E[] pollArray(int n);
+   public E[] pollArray(int n);
 
     /**
      * Retrieves and removes the last n elements of the list.
@@ -133,7 +133,7 @@ public interface List<E> {
      * @param n The number of elements to retrieve and remove.
      * @return An array containing the last n elements of the list.
      */
-    E[] pollLastArray(int n);
+   public E[] pollLastArray(int n);
 
     /**
      * Retrieves and removes the first n elements of the list.
@@ -141,7 +141,7 @@ public interface List<E> {
      * @param n The number of elements to retrieve and remove.
      * @return A list containing the first n elements of the list.
      */
-    List<E> pollCollection(int n);
+   public List<E> pollCollection(int n);
 
     /**
      * Retrieves and removes the last n elements of the list.
@@ -149,7 +149,7 @@ public interface List<E> {
      * @param n The number of elements to retrieve and remove.
      * @return A list containing the last n elements of the list.
      */
-    List<E>pollLastCollection(int n);
+   public List<E>pollLastCollection(int n);
 
     /**
      * Removes the first occurrence of the specified element from this list, if it is present.
@@ -157,7 +157,7 @@ public interface List<E> {
      * @param element The element to be removed from this list.
      * @return 'true' if the element was removed successfully, otherwise 'false'.
      */
-    boolean remove(E element);
+   public boolean remove(E element);
 
     /**
      * Removes from this list all of its elements that are contained in the specified array.
@@ -165,7 +165,7 @@ public interface List<E> {
      * @param array The array containing elements to be removed from this list.
      * @return 'true' if the array elements were removed successfully, otherwise 'false'.
      */
-    boolean remove(E[] array);
+   public boolean remove(E[] array);
 
     /**
      * Removes from this list all of its elements that are contained in the specified collection.
@@ -173,7 +173,7 @@ public interface List<E> {
      * @param collection The collection containing elements to be removed from this list.
      * @return 'true' if the collection elements were removed successfully, otherwise 'false'.
      */
-    boolean remove(Collection<E> collection);
+   public boolean remove(Collection<E> collection);
 
     /**
      * Removes all of the elements of this list that satisfy the given predicate.
@@ -181,7 +181,7 @@ public interface List<E> {
      * @param filter The predicate used to test elements.
      * @return 'true' if elements were removed successfully, otherwise 'false'.
      */
-    boolean remove(Predicate<E> filter);
+   public boolean remove(Predicate<E> filter);
 
     /**
      * Replaces each element of this list with the result of applying the function to that element.
@@ -191,7 +191,7 @@ public interface List<E> {
      * @param comparator  The comparator to determine if an element should be replaced.
      * @return 'true' if elements were replaced successfully, otherwise 'false'.
      */
-    boolean replace(E element, E newElement, Predicate<E> comparator);
+   public boolean replace(E element, E newElement, Predicate<E> comparator);
 
     /**
      * Replaces each element of this list with the result of applying the function to that element.
@@ -201,7 +201,7 @@ public interface List<E> {
      * @param comparator The comparator to determine if an element should be replaced.
      * @return 'true' if elements were replaced successfully, otherwise 'false'.
      */
-    boolean replace(E[] array, E[] newArray, Predicate<E> comparator);
+    public boolean replace(E[] array, E[] newArray, Predicate<E> comparator);
 
     /**
      * Replaces each element of this list with the result of applying the function to that element.
@@ -211,7 +211,7 @@ public interface List<E> {
      * @param comparator The comparator to determine if an element should be replaced.
      * @return 'true' if elements were replaced successfully, otherwise 'false'.
      */
-    boolean replace(Collection<E> collection, Collection<E> newCollection, Predicate<E> comparator);
+    public boolean replace(Collection<E> collection, Collection<E> newCollection, Predicate<E> comparator);
 
     /**
      * Retains only the elements in this list that are contained in the specified array.
@@ -219,7 +219,7 @@ public interface List<E> {
      * @param array The array containing elements to be retained in this list.
      * @return 'true' if elements were retained successfully, otherwise 'false'.
      */
-    boolean retain(E[] array);
+    public boolean retain(E[] array);
 
     /**
      * Retains only the elements in this list that are contained in the specified collection.
@@ -227,7 +227,7 @@ public interface List<E> {
      * @param collection The collection containing elements to be retained in this list.
      * @return 'true' if elements were retained successfully, otherwise 'false'.
      */
-    boolean retain(Collection<E> collection);
+    public boolean retain(Collection<E> collection);
 
     /**
      * Replaces the specified element by a new element in this list. Only the first occurrence is replaced.
@@ -236,7 +236,7 @@ public interface List<E> {
      * @param element The new element to replace the old one.
      * @return 'true' if the element was replaced successfully, otherwise 'false'.
      */
-    boolean set(int index, E element);
+    public boolean set(int index, E element);
 
     /**
      * Sorts this list according to the order induced by the specified Comparator.
@@ -244,7 +244,7 @@ public interface List<E> {
      * @param toInt The function to extract the integer keys from elements.
      * @return 'true' if the list was sorted successfully, otherwise 'false'.
      */
-    boolean sort(ToIntFunction<E> toInt);
+    public boolean sort(ToIntFunction<E> toInt);
 
     /**
      * Returns a sub list of this list between the specified "from" and "to" indices.
@@ -253,13 +253,13 @@ public interface List<E> {
      * @param to   The ending index of the sub list.
      * @return A sub list containing elements from the specified range.
      */
-    List<E> subList(int from, int to);
+    public List<E> subList(int from, int to);
 
     /**
      * Returns an array containing all of the elements in this list.
      *
      * @return An array containing all of the elements in this list.
      */
-    E[] toArray();
+    public E[] toArray();
 }
 

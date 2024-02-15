@@ -26,21 +26,11 @@ public abstract class AbstractNode<E> implements Node<E>, Cloneable {
      */
     @Override
     public E get() {
-        return null;
+        return this.element;
     }
 
     public String toString() {
         return element.toString();
     }
 
-    @Override
-    public AbstractNode<E> clone() {
-        try {
-            AbstractNode clone = (AbstractNode) super.clone();
-            // TODO: copy mutable state here, so the clone can't change the internals of the original
-            return clone;
-        } catch (CloneNotSupportedException e) {
-            throw new AssertionError();
-        }
-    }
 }

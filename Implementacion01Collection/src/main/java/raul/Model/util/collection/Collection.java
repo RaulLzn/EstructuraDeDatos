@@ -1,6 +1,5 @@
 package raul.Model.util.collection;
 
-import raul.Model.util.Iterator.Iterator;
 import raul.Model.util.iterable.Iterable;
 
 /**
@@ -63,12 +62,5 @@ public interface Collection<E> extends Iterable<E> {
      * @return the number of elements in this collection.
      */
     int size();
-
-    /**
-     * Gets an iterator over the elements in the collection.
-     *
-     * @return an iterator over the elements in the collection.
-     */
-    Iterator<E> iterator();
 
 }

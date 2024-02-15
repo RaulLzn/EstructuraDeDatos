@@ -4,6 +4,7 @@ import raul.Model.util.Iterator.Iterator;
 import raul.Model.util.array.AbstractArray;
 import raul.Model.util.collection.Collection;
 
+import java.util.LinkedList;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.logging.Level;
@@ -37,18 +38,15 @@ public class Array<E> extends AbstractArray<E> {
      */
     @Override
     public boolean add(E element) {
-        if (element == null) {
-            return false;
-        }
-        for (int ii = 0; ii < elements.length; ii++) {
-            if (elements[ii] == null) {
-                try {
-                    elements[ii] = element;
+        try {
+            for (int i = 0; i < elements.length; i++) {
+                if (elements[i] == null) {
+                    elements[i] = element;
                     return true;
-                } catch (Exception e) {
-                    Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
                 }
             }
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
         return false;
     }
@@ -71,14 +69,17 @@ public class Array<E> extends AbstractArray<E> {
             for (int ii = 0; ii < remainingSpace; ii++) {
                 spaceForIndex++;
             }
-            for (int ii = index; ii < spaceForIndex; ii++) {
+            for (int ii = 0; ii < spaceForIndex; ii++) {
                 elements[index] = array[ii];
+                index++;
             }
             return false;
         }
         try {
+            int it = 0;
             for (int ii = 0; ii < array.length; ii++) {
                 elements[index] = array[ii];
+                index++;
             }
             return true;
         } catch (Exception e) {
@@ -96,21 +97,23 @@ public class Array<E> extends AbstractArray<E> {
      */
     @Override
     public boolean add(int index, Collection<E> collection) {
-        if (index < 0 || index > elements.length || collection == null) {
-            return false;
-        }
-        int remaingSpace = elements.length - index;
-        if (remaingSpace < collection.size()) {
-            return false;
-        }
         try {
             Iterator<E> collectionIterator = collection.iterator();
-            int ii = 0;
-            while (collectionIterator.hasNext()) {
-                elements[index + ii] = collectionIterator.next();
-                ii++;
+            int counter = 0;
+            int restSpaces = elements.length - index;
+            if (restSpaces >= collection.size()) {
+                for (int i = index; counter < collection.size(); i++) {
+                    elements[i] = collectionIterator.next();
+                    counter++;
+                }
+                return true;
+            } else {
+                for (int i = index; counter < elements.length; i++) {
+                    elements[i] = collectionIterator.next();
+                    counter++;
+                }
+                return false;
             }
-            return true;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
@@ -123,11 +126,10 @@ public class Array<E> extends AbstractArray<E> {
     @Override
     public void defragment() {
         try {
-
             int noNullCount = 0;
             for (int ii = 0; ii < elements.length; ii++) {
-                if (elements[ii] != null){
-                    elements[noNullCount] = elements[ii];
+                if (elements[ii] != null) {
+                    elements[noNullCount++] = elements[ii];
                 }
             }
             for (int ii = noNullCount; ii < elements.length; ii++) {
@@ -147,7 +149,7 @@ public class Array<E> extends AbstractArray<E> {
     @Override
     public E get(int index) {
         try {
-            if (index >= 0 & index < elements.length) {
+            if (index < elements.length && index >= 0) {
                 return elements[index];
             }
         } catch (Exception e) {
@@ -207,7 +209,7 @@ public class Array<E> extends AbstractArray<E> {
     @Override
     public boolean remove(int index) {
         try {
-            if (index < 0 || index > elements.length) {
+            if (index < 0 || index >= elements.length) {
                 return false;
             }
             elements[index] = null;
@@ -229,7 +231,7 @@ public class Array<E> extends AbstractArray<E> {
     public boolean remove(Predicate<E> filter) {
         try {
             for (int ii = 0; ii < elements.length; ii++) {
-                if (elements[ii] != null & filter.test(elements[ii])) {
+                if (elements[ii] != null && filter.test(elements[ii])) {
                     elements[ii] = null;
                     defragment();
                     return true;
@@ -256,8 +258,8 @@ public class Array<E> extends AbstractArray<E> {
         try {
             for (int ii = from; ii < to; ii++) {
                 elements[ii] = null;
+                defragment();
             }
-            defragment();
             return true;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
@@ -340,10 +342,14 @@ public class Array<E> extends AbstractArray<E> {
      */
     @Override
     public boolean contains(E element) {
-        for (E e : elements){
-            if ((e == null & element == null) || (e != null & e.equals((element)))) {
-                return true;
+        try {
+            for (E element1 : elements) {
+                if (element1.equals(element)) {
+                    return true;
+                }
             }
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
         return false;
     }
@@ -389,11 +395,10 @@ public class Array<E> extends AbstractArray<E> {
                     return false;
                 }
             }
-            return true;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
-        return false;
+        return true;
     }
 
     /**
@@ -439,13 +444,7 @@ public class Array<E> extends AbstractArray<E> {
      */
     @Override
     public int size() {
-        int elementsInCollection = 0;
-        for (E e : elements) {
-            if (e != null) {
-                elementsInCollection++;
-            }
-        }
-        return elementsInCollection;
+        return elements.length;
     }
 
     /**
@@ -468,6 +467,7 @@ public class Array<E> extends AbstractArray<E> {
     @Override
     public Iterator<E> iterator() {
         return new Iterator<E>() {
+
             private int index = 0;
 
             @Override
@@ -480,11 +480,6 @@ public class Array<E> extends AbstractArray<E> {
                 return elements[index++];
             }
         };
-    }
-
-    @Override
-    public AbstractArray<E> clone() {
-        return (AbstractArray) super.clone();
     }
 
 }
