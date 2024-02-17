@@ -629,22 +629,18 @@ public class LinkedList<E> extends AbstractList<E> {
         try {
             List<E> save = new LinkedList<>();
             if (n < size) {
-                // Avanzar el iterador hasta el inicio de los elementos a copiar
                 Iterator<E> it = iterator();
                 for (int i = 0; i < size - n; i++) {
                     it.next();
                 }
-                // Copiar los elementos restantes en la lista save
                 while (it.hasNext()) {
-                    save.add(it.next());
+                    save.add(it.next());   
                 }
                 
-                // Eliminar los últimos n elementos de la lista original
                 for (int i = 0; i < n; i++) {
                     pollLast();
                 }
             } else {
-                // Si n es mayor o igual al tamaño de la lista, copiar toda la lista
                 save.add(this);
                 clear();
             }
