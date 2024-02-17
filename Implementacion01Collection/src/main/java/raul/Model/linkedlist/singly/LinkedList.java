@@ -629,21 +629,30 @@ public class LinkedList<E> extends AbstractList<E> {
         try {
             List<E> save = new LinkedList<>();
             if (n < size) {
+                // Avanzar el iterador hasta el inicio de los elementos a copiar
+                Iterator<E> it = iterator();
+                for (int i = 0; i < size - n; i++) {
+                    it.next();
+                }
+                // Copiar los elementos restantes en la lista save
+                while (it.hasNext()) {
+                    save.add(it.next());
+                }
+                
+                // Eliminar los últimos n elementos de la lista original
                 for (int i = 0; i < n; i++) {
-                    save.add(poll());
+                    pollLast();
                 }
             } else {
-                for (int i = 0; i < size; i++) {
-                    save.add(poll());
-                }
-                head = null;
-                size = 0;
+                // Si n es mayor o igual al tamaño de la lista, copiar toda la lista
+                save.add(this);
+                clear();
             }
             return save;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+            return null;
         }
-        return null;
     }
 
     /**
@@ -787,14 +796,24 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public boolean replace(E[] array, E[] newArray, Predicate<E> comparator) {
         try {
-            for (int i = 0; i < array.length; i++) {
-                replace(array[i], newArray[i], comparator);
+            if (array.length != newArray.length) {
+                return false;
             }
-            return true;
+            
+            boolean replaced = false;
+            for (int i = 0; i < array.length; i++) {
+                E element = array[i];
+                E newElement = newArray[i];
+                if (comparator.test(element)) {
+                    replace(element, newElement, e -> e.equals(element));
+                    replaced = true;
+                }
+            }
+            return replaced;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+            return false;
         }
-        return false;
     }
 
     /**
@@ -808,18 +827,26 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public boolean replace(Collection<E> collection, Collection<E> newCollection, Predicate<E> comparator) {
         try {
+            if (collection.size() != newCollection.size()) {
+                return false;
+            }
+            
+            boolean replaced = false;
             Iterator<E> iterator = collection.iterator();
             Iterator<E> newIterator = newCollection.iterator();
-            while (iterator.hasNext()) {
+            while (iterator.hasNext() && newIterator.hasNext()) {
                 E element = iterator.next();
                 E newElement = newIterator.next();
-                replace(element, newElement, comparator);
+                if (comparator.test(element)) {
+                    replace(element, newElement, e -> e.equals(element));
+                    replaced = true;
+                }
             }
-            return true;
+            return replaced;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+            return false;
         }
-        return false;
     }
 
     /**
