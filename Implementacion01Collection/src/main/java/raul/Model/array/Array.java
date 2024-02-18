@@ -8,6 +8,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 /**
  * This class represents a collection of elements that can be accessed by an index.
  * @param <E>

@@ -71,10 +71,10 @@ public class TaskManager implements TaskManagerInterface{
     public Task[] displayTasks() {
         Task[] tasks = new Task[taskList.size()];
         Iterator<Task> iterator = taskList.iterator();
-        int i = 0;
+        int ii = 0;
         while (iterator.hasNext()) {
-            tasks[i] = iterator.next();
-            i++;
+            tasks[ii] = iterator.next();
+            ii++;
         }
         return tasks;
 
@@ -91,16 +91,16 @@ public class TaskManager implements TaskManagerInterface{
         }
         return true;
     }
-    
+
     @Override
     public Task[] sortTasksByName() {
         Task[] tasks = displayTasks();
-        for (int i = 0; i < tasks.length; i++) {
-            for (int j = 0; j < tasks.length - 1; j++) {
-                if (tasks[j].getTaskName().compareTo(tasks[j + 1].getTaskName()) > 0) {
-                    Task temp = tasks[j];
-                    tasks[j] = tasks[j + 1];
-                    tasks[j + 1] = temp;
+        for (int ii = 0; ii < tasks.length; ii++) {
+            for (int jj = 0; jj < tasks.length - 1; jj++) {
+                if (tasks[jj].getTaskName().compareTo(tasks[jj + 1].getTaskName()) > 0) {
+                    Task temp = tasks[jj];
+                    tasks[jj] = tasks[jj + 1];
+                    tasks[jj + 1] = temp;
                 }
             }
         }
