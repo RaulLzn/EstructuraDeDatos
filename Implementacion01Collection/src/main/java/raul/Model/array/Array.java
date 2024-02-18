@@ -4,21 +4,19 @@ import raul.Model.util.Iterator.Iterator;
 import raul.Model.util.array.AbstractArray;
 import raul.Model.util.collection.Collection;
 
-import java.util.LinkedList;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 /**
  * This class represents a collection of elements that can be accessed by an index.
  * @param <E>
  */
 public class Array<E> extends AbstractArray<E> {
 
-
     private E[] elements;
 
+    
     /**
      * @param dimension
      */

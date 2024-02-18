@@ -124,6 +124,12 @@
     "JUnit.LinkedListTest.testSet.executor": "Run",
     "JUnit.LinkedListTest.testSubList.executor": "Run",
     "JUnit.LinkedlistTest.testAdd.executor": "Run",
+    "JUnit.TaskManagerTest.testAddTask.executor": "Run",
+    "JUnit.TaskManagerTest.testDisplayTasks.executor": "Run",
+    "JUnit.TaskManagerTest.testMarkCompleted.executor": "Run",
+    "JUnit.TaskManagerTest.testRemoveCompletedTasks.executor": "Run",
+    "JUnit.TaskManagerTest.testRemoveTask.executor": "Run",
+    "JUnit.TaskManagerTest.testSortTasksByName.executor": "Run",
     "OverrideImplement.generate.javadoc": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -131,6 +137,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/home/raul/ReposUPB/EstructuraDeDatos/Implementacion01Collection/src/test/java",
     "last_opened_file_path": "/home/raul/Descargas/Estructuras25",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -151,103 +158,106 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="raul.Model.TaskManager.TaskManager" />
       <recent name="raul.Model.linkedlist.singly" />
       <recent name="raul.Model.array" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest">
-    <configuration name="ArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TaskManagerTest.testSortTasksByName">
+    <configuration name="TaskManagerTest.testAddTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.array.*" />
+          <option name="PATTERN" value="raul.Model.TaskManager.TaskManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.array" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.array.ArrayTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Implementacion01Collection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="raul.Model.linkedlist.singly.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.linkedlist.singly" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.linkedlist.singly.LinkedListTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListTest.testPollLastCollectionUniqueElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Implementacion01Collection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="raul.Model.linkedlist.singly.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.linkedlist.singly" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.linkedlist.singly.LinkedListTest" />
-      <option name="METHOD_NAME" value="testPollLastCollectionUniqueElement" />
+      <option name="PACKAGE_NAME" value="raul.Model.TaskManager.TaskManager" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.TaskManager.TaskManager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="testAddTask" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.testReplaceArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskManagerTest.testDisplayTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.linkedlist.singly.*" />
+          <option name="PATTERN" value="raul.Model.TaskManager.TaskManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.linkedlist.singly" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.linkedlist.singly.LinkedListTest" />
-      <option name="METHOD_NAME" value="testReplaceArray" />
+      <option name="PACKAGE_NAME" value="raul.Model.TaskManager.TaskManager" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.TaskManager.TaskManager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="testDisplayTasks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.testReplaceCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskManagerTest.testMarkCompleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.linkedlist.singly.*" />
+          <option name="PATTERN" value="raul.Model.TaskManager.TaskManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.linkedlist.singly" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.linkedlist.singly.LinkedListTest" />
-      <option name="METHOD_NAME" value="testReplaceCollection" />
+      <option name="PACKAGE_NAME" value="raul.Model.TaskManager.TaskManager" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.TaskManager.TaskManager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="testMarkCompleted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskManagerTest.testRemoveCompletedTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementacion01Collection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="raul.Model.TaskManager.TaskManager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="raul.Model.TaskManager.TaskManager" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.TaskManager.TaskManager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="testRemoveCompletedTasks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskManagerTest.testSortTasksByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementacion01Collection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="raul.Model.TaskManager.TaskManager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="raul.Model.TaskManager.TaskManager" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.TaskManager.TaskManager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="testSortTasksByName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ArrayTest" />
-      <item itemvalue="JUnit.LinkedListTest.testPollLastCollectionUniqueElement" />
-      <item itemvalue="JUnit.LinkedListTest.testReplaceCollection" />
-      <item itemvalue="JUnit.LinkedListTest" />
-      <item itemvalue="JUnit.LinkedListTest.testReplaceArray" />
+      <item itemvalue="JUnit.TaskManagerTest.testDisplayTasks" />
+      <item itemvalue="JUnit.TaskManagerTest.testMarkCompleted" />
+      <item itemvalue="JUnit.TaskManagerTest.testRemoveCompletedTasks" />
+      <item itemvalue="JUnit.TaskManagerTest.testSortTasksByName" />
+      <item itemvalue="JUnit.TaskManagerTest.testAddTask" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LinkedListTest" />
-        <item itemvalue="JUnit.ArrayTest" />
-        <item itemvalue="JUnit.LinkedListTest.testReplaceArray" />
-        <item itemvalue="JUnit.LinkedListTest.testReplaceCollection" />
-        <item itemvalue="JUnit.LinkedListTest.testPollLastCollectionUniqueElement" />
+        <item itemvalue="JUnit.TaskManagerTest.testSortTasksByName" />
+        <item itemvalue="JUnit.TaskManagerTest.testRemoveCompletedTasks" />
+        <item itemvalue="JUnit.TaskManagerTest.testDisplayTasks" />
+        <item itemvalue="JUnit.TaskManagerTest.testMarkCompleted" />
+        <item itemvalue="JUnit.TaskManagerTest.testAddTask" />
       </list>
     </recent_temporary>
   </component>
@@ -297,6 +307,8 @@
       <workItem from="1707961131257" duration="13459000" />
       <workItem from="1708002259485" duration="609000" />
       <workItem from="1708003915753" duration="3862000" />
+      <workItem from="1708210191003" duration="745000" />
+      <workItem from="1708211379719" duration="8558000" />
     </task>
     <task id="LOCAL-00001" summary="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java">
       <option name="closed" value="true" />

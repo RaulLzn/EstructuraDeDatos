@@ -38,7 +38,6 @@ public class LinkedList<E> extends AbstractList<E> {
         }
     }
 
-
     /**
      * Removes all elements from the collection.
      *
@@ -62,7 +61,7 @@ public class LinkedList<E> extends AbstractList<E> {
      *
      * @param element the element to search for.
      * @return 'true' if the collection contains the specified element, otherwise
-     * 'false'.
+     *         'false'.
      */
     @Override
     public boolean contains(E element) {
@@ -86,7 +85,7 @@ public class LinkedList<E> extends AbstractList<E> {
      * @param array the array containing elements to be searched for in this
      *              collection.
      * @return 'true' if the collection contains the specified elements in the
-     * array, otherwise 'false'.
+     *         array, otherwise 'false'.
      */
     @Override
     public boolean contains(E[] array) {
@@ -109,7 +108,7 @@ public class LinkedList<E> extends AbstractList<E> {
      * @param collection the collection containing elements to be searched for in
      *                   this collection.
      * @return 'true' if the collection contains the specified elements, otherwise
-     * 'false'.
+     *         'false'.
      */
     @Override
     public boolean contains(Collection<E> collection) {
@@ -142,7 +141,7 @@ public class LinkedList<E> extends AbstractList<E> {
      * Redistributes the elements in the collection in reverse order.
      *
      * @return 'true' if the collection was reversed successfully, otherwise
-     * 'false'.
+     *         'false'.
      */
     @Override
     public boolean reverse() {
@@ -176,7 +175,7 @@ public class LinkedList<E> extends AbstractList<E> {
             @Override
             public boolean hasNext() {
                 return inode != null;
-            }
+            }   
 
             @Override
             public E next() {
@@ -197,7 +196,7 @@ public class LinkedList<E> extends AbstractList<E> {
      * @return 'true' if the element was added successfully, otherwise 'false'.
      */
     @Override
-    public boolean  add(E element) {
+    public boolean add(E element) {
         try {
             LinkedNode<E> newNode = new LinkedNode<>(element, null);
             if (size == 0) {
@@ -228,17 +227,18 @@ public class LinkedList<E> extends AbstractList<E> {
                 add(element);
             }
             return true;
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
         return false;
     }
 
     /**
-     * Appends all of the elements in the specified collection to the end of this list.
+     * Appends all of the elements in the specified collection to the end of this
+     * list.
      *
-     * @param collection The collection containing elements to be added to this list.
+     * @param collection The collection containing elements to be added to this
+     *                   list.
      * @return 'true' if the collection was added successfully, otherwise 'false'.
      */
     @Override
@@ -282,9 +282,11 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Appends all of the elements in the specified array at the beginning of this list.
+     * Appends all of the elements in the specified array at the beginning of this
+     * list.
      *
-     * @param array The array containing elements to be added at the beginning of this list.
+     * @param array The array containing elements to be added at the beginning of
+     *              this list.
      * @return 'true' if the array was added successfully, otherwise 'false'.
      */
     @Override
@@ -301,9 +303,11 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Appends all of the elements in the specified collection at the beginning of this list.
+     * Appends all of the elements in the specified collection at the beginning of
+     * this list.
      *
-     * @param collection The collection containing elements to be added at the beginning of this list.
+     * @param collection The collection containing elements to be added at the
+     *                   beginning of this list.
      * @return 'true' if the collection was added successfully, otherwise 'false'.
      */
     @Override
@@ -634,9 +638,9 @@ public class LinkedList<E> extends AbstractList<E> {
                     it.next();
                 }
                 while (it.hasNext()) {
-                    save.add(it.next());   
+                    save.add(it.next());
                 }
-                
+
                 for (int i = 0; i < n; i++) {
                     pollLast();
                 }
@@ -652,7 +656,8 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Removes the first occurrence of the specified element from this list, if it is present.
+     * Removes the first occurrence of the specified element from this list, if it
+     * is present.
      *
      * @param element The element to be removed from this list.
      * @return 'true' if the element was removed successfully, otherwise 'false'.
@@ -687,10 +692,12 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Removes from this list all of its elements that are contained in the specified array.
+     * Removes from this list all of its elements that are contained in the
+     * specified array.
      *
      * @param array The array containing elements to be removed from this list.
-     * @return 'true' if the array elements were removed successfully, otherwise 'false'.
+     * @return 'true' if the array elements were removed successfully, otherwise
+     *         'false'.
      */
     @Override
     public boolean remove(E[] array) {
@@ -706,10 +713,13 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Removes from this list all of its elements that are contained in the specified collection.
+     * Removes from this list all of its elements that are contained in the
+     * specified collection.
      *
-     * @param collection The collection containing elements to be removed from this list.
-     * @return 'true' if the collection elements were removed successfully, otherwise 'false'.
+     * @param collection The collection containing elements to be removed from this
+     *                   list.
+     * @return 'true' if the collection elements were removed successfully,
+     *         otherwise 'false'.
      */
     @Override
     public boolean remove(Collection<E> collection) {
@@ -757,11 +767,13 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Replaces each element of this list with the result of applying the function to that element.
+     * Replaces each element of this list with the result of applying the function
+     * to that element.
      *
      * @param element    The element to be replaced.
      * @param newElement The new element to replace the old one.
-     * @param comparator The comparator to determine if an element should be replaced.
+     * @param comparator The comparator to determine if an element should be
+     *                   replaced.
      * @return 'true' if elements were replaced successfully, otherwise 'false'.
      */
     @Override
@@ -782,11 +794,13 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Replaces each element of this list with the result of applying the function to that element.
+     * Replaces each element of this list with the result of applying the function
+     * to that element.
      *
      * @param array      The array containing elements to be replaced.
      * @param newArray   The array containing new elements to replace the old ones.
-     * @param comparator The comparator to determine if an element should be replaced.
+     * @param comparator The comparator to determine if an element should be
+     *                   replaced.
      * @return 'true' if elements were replaced successfully, otherwise 'false'.
      */
     @Override
@@ -795,7 +809,7 @@ public class LinkedList<E> extends AbstractList<E> {
             if (array.length != newArray.length) {
                 return false;
             }
-            
+
             boolean replaced = false;
             for (int i = 0; i < array.length; i++) {
                 E element = array[i];
@@ -813,11 +827,14 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Replaces each element of this list with the result of applying the function to that element.
+     * Replaces each element of this list with the result of applying the function
+     * to that element.
      *
      * @param collection    The collection containing elements to be replaced.
-     * @param newCollection The collection containing new elements to replace the old ones.
-     * @param comparator    The comparator to determine if an element should be replaced.
+     * @param newCollection The collection containing new elements to replace the
+     *                      old ones.
+     * @param comparator    The comparator to determine if an element should be
+     *                      replaced.
      * @return 'true' if elements were replaced successfully, otherwise 'false'.
      */
     @Override
@@ -826,7 +843,7 @@ public class LinkedList<E> extends AbstractList<E> {
             if (collection.size() != newCollection.size()) {
                 return false;
             }
-            
+
             boolean replaced = false;
             Iterator<E> iterator = collection.iterator();
             Iterator<E> newIterator = newCollection.iterator();
@@ -846,7 +863,8 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Retains only the elements in this list that are contained in the specified array.
+     * Retains only the elements in this list that are contained in the specified
+     * array.
      *
      * @param array The array containing elements to be retained in this list.
      * @return 'true' if elements were retained successfully, otherwise 'false'.
@@ -885,9 +903,11 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Retains only the elements in this list that are contained in the specified collection.
+     * Retains only the elements in this list that are contained in the specified
+     * collection.
      *
-     * @param collection The collection containing elements to be retained in this list.
+     * @param collection The collection containing elements to be retained in this
+     *                   list.
      * @return 'true' if elements were retained successfully, otherwise 'false'.
      */
     @Override
@@ -915,7 +935,8 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Replaces the specified element by a new element in this list. Only the first occurrence is replaced.
+     * Replaces the specified element by a new element in this list. Only the first
+     * occurrence is replaced.
      *
      * @param index   The index of the element to be replaced.
      * @param element The new element to replace the old one.
@@ -951,15 +972,15 @@ public class LinkedList<E> extends AbstractList<E> {
     public boolean sort(ToIntFunction<E> toInt) {
         try {
             for (int i = 0; i < size; i++) {
-                LinkedNode<E> current = head;
+                LinkedNode<E> inode = head;
                 LinkedNode<E> next = head.getNext();
                 for (int j = 0; j < size - 1; j++) {
-                    if (toInt.applyAsInt(current.get()) > toInt.applyAsInt(next.get())) {
-                        E temp = current.get();
-                        current.set(next.get());
+                    if (toInt.applyAsInt(inode.get()) > toInt.applyAsInt(next.get())) {
+                        E temp = inode.get();
+                        inode.set(next.get());
                         next.set(temp);
                     }
-                    current = next;
+                    inode = next;
                     next = next.getNext();
                 }
             }
@@ -971,7 +992,8 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Returns a sub list of this list between the specified "from" and "to" indices.
+     * Returns a sub list of this list between the specified "from" and "to"
+     * indices.
      *
      * @param from The starting index of the sub list.
      * @param to   The ending index of the sub list.
