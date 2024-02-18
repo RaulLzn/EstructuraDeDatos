@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -164,7 +167,7 @@
       <recent name="raul.Model.array" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TaskManagerTest">
+  <component name="RunManager" selected="JUnit.TaskManagerTest.testDisplayTasks">
     <configuration name="TaskManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion01Collection" />
       <extension name="coverage">
@@ -253,10 +256,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskManagerTest.testDisplayTasks" />
         <item itemvalue="JUnit.TaskManagerTest" />
         <item itemvalue="JUnit.TaskManagerTest.testSortTasksByName" />
         <item itemvalue="JUnit.TaskManagerTest.testRemoveCompletedTasks" />
-        <item itemvalue="JUnit.TaskManagerTest.testDisplayTasks" />
         <item itemvalue="JUnit.TaskManagerTest.testMarkCompleted" />
       </list>
     </recent_temporary>
@@ -309,7 +312,7 @@
       <workItem from="1708003915753" duration="3862000" />
       <workItem from="1708210191003" duration="745000" />
       <workItem from="1708211379719" duration="9345000" />
-      <workItem from="1708275589811" duration="481000" />
+      <workItem from="1708275589811" duration="2755000" />
     </task>
     <task id="LOCAL-00001" summary="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java">
       <option name="closed" value="true" />

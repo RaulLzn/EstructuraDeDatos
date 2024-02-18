@@ -1,6 +1,7 @@
 package raul.Model.TaskManager.TaskManager;
 
 import raul.Model.TaskManager.Task;
+import raul.Model.array.Array;
 import raul.Model.linkedlist.singly.LinkedList;
 import raul.Model.util.Iterator.Iterator;
 
@@ -69,15 +70,18 @@ public class TaskManager implements TaskManagerInterface{
     //????
     @Override
     public Task[] displayTasks() {
-        Task[] tasks = new Task[taskList.size()];
+        Array<Task> tasksArray = new Array<>(taskList.size());
         Iterator<Task> iterator = taskList.iterator();
         int ii = 0;
         while (iterator.hasNext()) {
-            tasks[ii] = iterator.next();
+            tasksArray.add(iterator.next());
             ii++;
         }
+        Task[] tasks = new Task[tasksArray.size()];
+        for (int jj = 0; jj < tasksArray.size(); jj++) {
+            tasks[jj] = tasksArray.get(jj);
+        }
         return tasks;
-
     }
 
     @Override

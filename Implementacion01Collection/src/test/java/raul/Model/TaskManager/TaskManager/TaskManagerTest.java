@@ -3,7 +3,11 @@ package raul.Model.TaskManager.TaskManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import raul.Model.TaskManager.Task;
+import raul.Model.array.Array;
+
 import static org.junit.jupiter.api.Assertions.*;
+
+//El test de esta clase se encuentra en src.test.java.raul.Model.TaskManager.TaskManagerTest
 
 
 class TaskManagerTest {
@@ -64,17 +68,19 @@ class TaskManagerTest {
 
     @Test
     void testDisplayTasks() {
-        assertTrue(taskManager.addTask(new Task("Tarea 1", 3, false), 3));
-        assertTrue(taskManager.addTask(new Task("Tarea 2", 1, false), 1));
-        assertTrue(taskManager.addTask(new Task("Tarea 3", 2, false), 2));
+        Task task1 = new Task("Tarea 1", 3, false);
+        Task task2 = new Task("Tarea 2", 1, false);
+        Task task3 = new Task("Tarea 3", 2, false);
 
-        Task[] tasks = taskManager.displayTasks();
-        assertNotNull(tasks);
-        assertEquals(3, tasks.length);
+        taskManager.addTask(task1, 3);
+        taskManager.addTask(task2, 1);
+        taskManager.addTask(task3, 2);
 
-        assertEquals("Tarea 2", tasks[0].getTaskName());
-        assertEquals("Tarea 3", tasks[1].getTaskName());
-        assertEquals("Tarea 1", tasks[2].getTaskName());
+        Task[] displayedTasks = taskManager.displayTasks();
+
+        Task[] expectedTasks = {task2, task3, task1};
+
+        assertArrayEquals(expectedTasks, displayedTasks);
     }
 
     @Test
