@@ -101,15 +101,15 @@ class TaskManagerTest {
 
     @Test
     void testSortTasksByName() {
-        taskManager.addTask(new Task("C", 3, false), 3);
-        taskManager.addTask(new Task("B", 1, false), 1);
-        taskManager.addTask(new Task("A", 2, false), 2);
+        taskManager.addTask(new Task("Tarea 2", 3, false), 3);
+        taskManager.addTask(new Task("Tarea 1", 1, false), 1);
+        taskManager.addTask(new Task("Tarea 3", 2, false), 2);
 
         Task[] sortedTasks = taskManager.sortTasksByName();
 
-        assertEquals("A", sortedTasks[0].getTaskName());
-        assertEquals("B", sortedTasks[1].getTaskName());
-        assertEquals("C", sortedTasks[2].getTaskName());
+        assertEquals("Tarea 1", sortedTasks[0].getTaskName());
+        assertEquals("Tarea 2", sortedTasks[1].getTaskName());
+        assertEquals("Tarea 3", sortedTasks[2].getTaskName());
     }
 
 

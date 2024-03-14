@@ -3,11 +3,18 @@
   <component name="AnalysisUIOptions">
     <option name="ANALYZE_TEST_SOURCES" value="false" />
   </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Implementacion01Collection:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d08aed-4bf5-4ec1-bbe3-8437b717cdc6" name="Changes" comment="" />
+    <list default="true" id="61d08aed-4bf5-4ec1-bbe3-8437b717cdc6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Implementaciones y Quiz1.zip" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -91,176 +98,231 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ArrayTest.executor": "Run",
-    "JUnit.ArrayTest.testAdd.executor": "Run",
-    "JUnit.ArrayTest.testAddArrayAtIndex.executor": "Run",
-    "JUnit.ArrayTest.testAddAtIndexWithArray.executor": "Run",
-    "JUnit.ArrayTest.testAddAtIndexWithArrayMoreSpacesThan.executor": "Run",
-    "JUnit.ArrayTest.testAddAtIndexWithCollection.executor": "Run",
-    "JUnit.ArrayTest.testAddAtIndexWithCollectionMoreSpacesThan.executor": "Run",
-    "JUnit.ArrayTest.testAddCollectionAtIndex.executor": "Run",
-    "JUnit.ArrayTest.testAddElement.executor": "Run",
-    "JUnit.ArrayTest.testContains.executor": "Run",
-    "JUnit.ArrayTest.testContainsCollection.executor": "Run",
-    "JUnit.ArrayTest.testDefragment.executor": "Run",
-    "JUnit.ArrayTest.testRemoveAtIndex.executor": "Run",
-    "JUnit.ArrayTest.testRemoveByFilter.executor": "Run",
-    "JUnit.ArrayTest.testRemoveRange.executor": "Run",
-    "JUnit.ArrayTest.testSize.executor": "Run",
-    "JUnit.LinkedListTest.executor": "Run",
-    "JUnit.LinkedListTest.testAdd.executor": "Run",
-    "JUnit.LinkedListTest.testAddArray.executor": "Run",
-    "JUnit.LinkedListTest.testAddFirst.executor": "Run",
-    "JUnit.LinkedListTest.testAddFirstCollection.executor": "Run",
-    "JUnit.LinkedListTest.testPeekCollection.executor": "Run",
-    "JUnit.LinkedListTest.testPeekLastArray.executor": "Run",
-    "JUnit.LinkedListTest.testPeekLastCollection.executor": "Run",
-    "JUnit.LinkedListTest.testPollLastArray.executor": "Run",
-    "JUnit.LinkedListTest.testPollLastCollection.executor": "Run",
-    "JUnit.LinkedListTest.testPollLastCollectionUniqueElement.executor": "Run",
-    "JUnit.LinkedListTest.testPollLastUniqueElement.executor": "Run",
-    "JUnit.LinkedListTest.testRemoveTail.executor": "Run",
-    "JUnit.LinkedListTest.testReplaceArray.executor": "Run",
-    "JUnit.LinkedListTest.testReplaceCollection.executor": "Run",
-    "JUnit.LinkedListTest.testSet.executor": "Run",
-    "JUnit.LinkedListTest.testSubList.executor": "Run",
-    "JUnit.LinkedlistTest.testAdd.executor": "Run",
-    "JUnit.TaskManagerTest.executor": "Run",
-    "JUnit.TaskManagerTest.testAddTask.executor": "Run",
-    "JUnit.TaskManagerTest.testDisplayTasks.executor": "Run",
-    "JUnit.TaskManagerTest.testMarkCompleted.executor": "Run",
-    "JUnit.TaskManagerTest.testRemoveCompletedTasks.executor": "Run",
-    "JUnit.TaskManagerTest.testRemoveTask.executor": "Run",
-    "JUnit.TaskManagerTest.testSortTasksByName.executor": "Run",
-    "OverrideImplement.generate.javadoc": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/home/raul/ReposUPB/EstructuraDeDatos/Implementacion01Collection/src/test/java",
-    "last_opened_file_path": "/home/raul/Descargas/Estructuras25",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/raul/UpbRepositorios/EstructuraDeDatos/Implementacion01Collection/src/main/java/raul/example/Main.java",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.rainbow.brackets.disable.when",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ArrayTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testAdd.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testAddArrayAtIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testAddAtIndexWithArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testAddAtIndexWithArrayMoreSpacesThan.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testAddAtIndexWithCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testAddAtIndexWithCollectionMoreSpacesThan.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testAddCollectionAtIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testAddElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testContains.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testContainsCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testDefragment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testRemoveAtIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testRemoveByFilter.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testRemoveRange.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTest.testSize.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testAdd (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testAdd.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testAddArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testAddCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testAddFirst.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testAddFirstArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testAddFirstCollection (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testAddFirstCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testClear.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testContains.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testContainsArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testContainsCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testIsEmpty.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPeek.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPeekArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPeekCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPeekLast.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPeekLastArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPeekLastCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPoll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollArrayOneElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollCollectionUniqueElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollLast.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollLastArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollLastArrayUniqueItem.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollLastCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollLastCollectionUniqueElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollLastUniqueElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollTwoElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testPollUniqueElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testRemove.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testRemoveArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testRemoveCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testRemovePredicate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testRemoveTail.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testReplace.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testReplaceArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testReplaceCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testRetainArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testRetainCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testReverse.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testSet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testSize.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testSort.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testSubList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.testToArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedlistTest.testAdd.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PriorityQueueTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PriorityQueueTest.testExtract.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PriorityQueueTest.testPeek.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueueTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueueTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueueTest.testContains.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueueTest.testExtract.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueueTest.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueueTest.testPeek.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueueTest.testSize.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StackTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StackTest.testPeek.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StackTest.testPushAndPeek.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskManagerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskManagerTest.testAddTask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskManagerTest.testDisplayTasks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskManagerTest.testMarkCompleted.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskManagerTest.testRemoveCompletedTasks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskManagerTest.testRemoveTask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskManagerTest.testSortTasksByName.executor&quot;: &quot;Run&quot;,
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/raul/ReposUPB/EstructuraDeDatos/Implementacion01Collection/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/raul/ReposUPB/workspaces.edu.ds&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/raul/UpbRepositorios/EstructuraDeDatos/Implementacion01Collection/src/main/java/raul/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets.disable.when&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="raul.SGTTP.Model.repository" />
+      <recent name="raul.SGTTP.shared.filejsonadapter" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="raul.Model.TaskManager.TaskManager" />
-      <recent name="raul.Model.linkedlist.singly" />
-      <recent name="raul.Model.array" />
+      <recent name="raul.Model.linkedlist.doubly.circular" />
+      <recent name="raul.Model.priorityqueue" />
+      <recent name="raul.Model.queue.list" />
+      <recent name="raul.Model.queue.array" />
+      <recent name="raul.Model.linkedlist.doubly" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TaskManagerTest.testDisplayTasks">
-    <configuration name="TaskManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PriorityQueueTest">
+    <configuration name="ArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.TaskManager.TaskManager.*" />
+          <option name="PATTERN" value="raul.Model.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.TaskManager.TaskManager" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.TaskManager.TaskManager.TaskManagerTest" />
+      <option name="PACKAGE_NAME" value="raul.Model.array" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.array.ArrayTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskManagerTest.testDisplayTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.TaskManager.TaskManager.*" />
+          <option name="PATTERN" value="raul.Model.linkedlist.doubly.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.TaskManager.TaskManager" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.TaskManager.TaskManager.TaskManagerTest" />
-      <option name="METHOD_NAME" value="testDisplayTasks" />
+      <option name="PACKAGE_NAME" value="raul.Model.linkedlist.doubly" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.linkedlist.doubly.LinkedListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListTest.testSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementacion01Collection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="raul.Model.linkedlist.doubly.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="raul.Model.linkedlist.doubly" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.linkedlist.doubly.LinkedListTest" />
+      <option name="METHOD_NAME" value="testSet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskManagerTest.testMarkCompleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PriorityQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.TaskManager.TaskManager.*" />
+          <option name="PATTERN" value="raul.Model.priorityqueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.TaskManager.TaskManager" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.TaskManager.TaskManager.TaskManagerTest" />
-      <option name="METHOD_NAME" value="testMarkCompleted" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="raul.Model.priorityqueue" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.priorityqueue.PriorityQueueTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskManagerTest.testRemoveCompletedTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PriorityQueueTest.testExtract" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.TaskManager.TaskManager.*" />
+          <option name="PATTERN" value="raul.Model.priorityqueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.TaskManager.TaskManager" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.TaskManager.TaskManager.TaskManagerTest" />
-      <option name="METHOD_NAME" value="testRemoveCompletedTasks" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskManagerTest.testSortTasksByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Implementacion01Collection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="raul.Model.TaskManager.TaskManager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.TaskManager.TaskManager" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.TaskManager.TaskManager.TaskManagerTest" />
-      <option name="METHOD_NAME" value="testSortTasksByName" />
+      <option name="PACKAGE_NAME" value="raul.Model.priorityqueue" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.priorityqueue.PriorityQueueTest" />
+      <option name="METHOD_NAME" value="testExtract" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TaskManagerTest" />
-      <item itemvalue="JUnit.TaskManagerTest.testDisplayTasks" />
-      <item itemvalue="JUnit.TaskManagerTest.testMarkCompleted" />
-      <item itemvalue="JUnit.TaskManagerTest.testRemoveCompletedTasks" />
-      <item itemvalue="JUnit.TaskManagerTest.testSortTasksByName" />
+      <item itemvalue="JUnit.PriorityQueueTest.testExtract" />
+      <item itemvalue="JUnit.ArrayTest" />
+      <item itemvalue="JUnit.LinkedListTest (1)" />
+      <item itemvalue="JUnit.LinkedListTest.testSet" />
+      <item itemvalue="JUnit.PriorityQueueTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaskManagerTest.testDisplayTasks" />
-        <item itemvalue="JUnit.TaskManagerTest" />
-        <item itemvalue="JUnit.TaskManagerTest.testSortTasksByName" />
-        <item itemvalue="JUnit.TaskManagerTest.testRemoveCompletedTasks" />
-        <item itemvalue="JUnit.TaskManagerTest.testMarkCompleted" />
+        <item itemvalue="JUnit.PriorityQueueTest" />
+        <item itemvalue="JUnit.PriorityQueueTest.testExtract" />
+        <item itemvalue="JUnit.LinkedListTest (1)" />
+        <item itemvalue="JUnit.LinkedListTest.testSet" />
+        <item itemvalue="JUnit.ArrayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +374,38 @@
       <workItem from="1708003915753" duration="3862000" />
       <workItem from="1708210191003" duration="745000" />
       <workItem from="1708211379719" duration="9345000" />
-      <workItem from="1708275589811" duration="2755000" />
+      <workItem from="1708275589811" duration="4578000" />
+      <workItem from="1708285885225" duration="658000" />
+      <workItem from="1708297258763" duration="302000" />
+      <workItem from="1708464673241" duration="4238000" />
+      <workItem from="1708468918684" duration="485000" />
+      <workItem from="1708626727743" duration="905000" />
+      <workItem from="1708639051264" duration="2200000" />
+      <workItem from="1708880450074" duration="11680000" />
+      <workItem from="1708896766404" duration="2231000" />
+      <workItem from="1708899236394" duration="3108000" />
+      <workItem from="1709043959717" duration="876000" />
+      <workItem from="1709046261561" duration="2451000" />
+      <workItem from="1709240759196" duration="5960000" />
+      <workItem from="1709430011021" duration="10793000" />
+      <workItem from="1709442460741" duration="3372000" />
+      <workItem from="1709446633415" duration="182000" />
+      <workItem from="1709482218037" duration="9938000" />
+      <workItem from="1709504131154" duration="1844000" />
+      <workItem from="1709675621505" duration="2544000" />
+      <workItem from="1709821749514" duration="1100000" />
+      <workItem from="1709845469773" duration="2815000" />
+      <workItem from="1709848355868" duration="3102000" />
+      <workItem from="1709914870108" duration="2144000" />
+      <workItem from="1709918018196" duration="11867000" />
+      <workItem from="1709934563355" duration="1212000" />
+      <workItem from="1709936289312" duration="2825000" />
+      <workItem from="1710165091585" duration="1214000" />
+      <workItem from="1710294741942" duration="6051000" />
+      <workItem from="1710302176801" duration="3724000" />
+      <workItem from="1710339113135" duration="741000" />
+      <workItem from="1710344705491" duration="1740000" />
+      <workItem from="1710377065728" duration="3901000" />
     </task>
     <task id="LOCAL-00001" summary="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java">
       <option name="closed" value="true" />
@@ -339,21 +432,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java" />
     <option name="LAST_COMMIT_MESSAGE" value="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/raul/Model/linkedlist/singly/LinkedListTest.java</url>
-          <line>453</line>
-          <properties class="raul.Model.linkedlist.singly.LinkedListTest" method="testReplaceArray">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Implementacion01Collection$ArrayTest.ic" NAME="ArrayTest Coverage Results" MODIFIED="1707934108180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

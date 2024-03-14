@@ -100,14 +100,15 @@ public class Array<E> extends AbstractArray<E> {
             Iterator<E> collectionIterator = collection.iterator();
             int counter = 0;
             int restSpaces = elements.length - index;
-            if (restSpaces >= collection.size()) {
-                for (int i = index; counter < collection.size(); i++) {
+            int collectionSize = collection.size();
+            if (restSpaces >= collectionSize) {
+                for (int i = index; counter < collectionSize; i++) {
                     elements[i] = collectionIterator.next();
                     counter++;
                 }
                 return true;
             } else {
-                for (int i = index; counter < elements.length; i++) {
+                for (int i = index; i < index + restSpaces; i++) {
                     elements[i] = collectionIterator.next();
                     counter++;
                 }

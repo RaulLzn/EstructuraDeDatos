@@ -236,7 +236,7 @@ public interface List<E> {
      * @param element The new element to replace the old one.
      * @return 'true' if the element was replaced successfully, otherwise 'false'.
      */
-    public boolean set(int index, E element);
+    public boolean set(E index, E element);
 
     /**
      * Sorts this list according to the order induced by the specified Comparator.
@@ -253,7 +253,7 @@ public interface List<E> {
      * @param to   The ending index of the sub list.
      * @return A sub list containing elements from the specified range.
      */
-    public List<E> subList(int from, int to);
+    public List<E> subList(E from, E to);
 
     /**
      * Returns an array containing all of the elements in this list.

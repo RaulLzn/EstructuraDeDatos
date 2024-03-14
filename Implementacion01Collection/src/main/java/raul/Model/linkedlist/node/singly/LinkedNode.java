@@ -3,6 +3,7 @@ package raul.Model.linkedlist.node.singly;
 import raul.Model.util.node.AbstractNode;
 
 public class LinkedNode<E> extends AbstractNode<E>{
+
     private LinkedNode<E> next;
 
     public LinkedNode(LinkedNode<E> next) {
@@ -21,6 +22,5 @@ public class LinkedNode<E> extends AbstractNode<E>{
     public void setNext(LinkedNode<E> next) {
         this.next = next;
     }
-
 
 }

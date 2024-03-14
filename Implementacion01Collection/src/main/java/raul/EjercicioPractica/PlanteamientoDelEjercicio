@@ -1,0 +1,26 @@
+Supongamos que estás desarrollando un sistema de gestión de un parque de diversiones.
+El parque tiene múltiples atracciones, cada una con diferentes características y restricciones.
+Necesitas implementar un sistema que pueda manejar las siguientes funcionalidades:
+
+1.  Agregar atracciones al parque: Debes poder agregar nuevas atracciones al parque. Cada
+    atracción tiene un nombre, una capacidad máxima de visitantes y una cola de espera para los
+    visitantes que desean ingresar.
+
+2.  Registrar la llegada de visitantes: Debes poder registrar la llegada de visitantes al parque.
+    Los visitantes pueden dirigirse a cualquier atracción disponible o unirse a la cola de espera de una
+    atracción si está llena.
+
+3.  Atender a los visitantes en las atracciones: Debes poder atender a los visitantes
+    en las atracciones. Cuando un visitante termina de disfrutar de una atracción,
+    debe ser retirado de la atracción y permitir que otro visitante de la cola de espera entre.
+
+4.  Mostrar el estado de las atracciones: Debes poder mostrar el estado de todas las atracciones en
+    el parque, incluyendo el nombre de la atracción, la cantidad de visitantes dentro
+    de la atracción y la cantidad de visitantes en la cola de espera.
+
+5.  Cerrar y eliminar atracciones del parque: Debes poder cerrar y
+    eliminar atracciones del parque cuando sea necesario.
+
+6.  Manejar múltiples atracciones simultáneamente: El sistema debe ser capaz de manejar múltiples
+    atracciones funcionando simultáneamente y asegurarse de que los
+    visitantes sean atendidos de manera adecuada.

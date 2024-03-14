@@ -1,6 +1,6 @@
-package raul.Model.linkedlist.singly;
+package raul.Model.linkedlist.doubly;
 
-import raul.Model.linkedlist.node.singly.LinkedNode;
+import raul.Model.linkedlist.node.doubly.LinkedNode;
 import raul.Model.util.Iterator.Iterator;
 import raul.Model.util.collection.Collection;
 import raul.Model.util.list.AbstractList;
@@ -14,15 +14,13 @@ import java.util.logging.Logger;
 
 public class LinkedList<E> extends AbstractList<E> {
 
-    private LinkedNode<E> head;
-    private LinkedNode<E> tail;
-    private LinkedNode<E> inode;
+    LinkedNode<E> head;
+    LinkedNode<E> tail;
 
     public LinkedList() {
         super();
         this.head = null;
         this.tail = null;
-        this.inode = null;
     }
 
     public LinkedList(E element) {
@@ -60,7 +58,7 @@ public class LinkedList<E> extends AbstractList<E> {
      *
      * @param element the element to search for.
      * @return 'true' if the collection contains the specified element, otherwise
-     *         'false'.
+     * 'false'.
      */
     @Override
     public boolean contains(E element) {
@@ -84,7 +82,7 @@ public class LinkedList<E> extends AbstractList<E> {
      * @param array the array containing elements to be searched for in this
      *              collection.
      * @return 'true' if the collection contains the specified elements in the
-     *         array, otherwise 'false'.
+     * array, otherwise 'false'.
      */
     @Override
     public boolean contains(E[] array) {
@@ -107,23 +105,24 @@ public class LinkedList<E> extends AbstractList<E> {
      * @param collection the collection containing elements to be searched for in
      *                   this collection.
      * @return 'true' if the collection contains the specified elements, otherwise
-     *         'false'.
+     * 'false'.
      */
     @Override
     public boolean contains(Collection<E> collection) {
         try {
+            boolean found = true;
             Iterator<E> iterator = collection.iterator();
             while (iterator.hasNext()) {
-                E element = iterator.next();
-                if (!contains(element)) {
-                    return false;
+                if (!contains(iterator.next())) {
+                    found = false;
+                    break;
                 }
             }
-            return true;
+            return found;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+            return false;
         }
-        return false;
     }
 
     /**
@@ -140,21 +139,22 @@ public class LinkedList<E> extends AbstractList<E> {
      * Redistributes the elements in the collection in reverse order.
      *
      * @return 'true' if the collection was reversed successfully, otherwise
-     *         'false'.
+     * 'false'.
      */
     @Override
     public boolean reverse() {
         try {
             LinkedNode<E> current = head;
-            LinkedNode<E> previous = null;
-            LinkedNode<E> next = null;
+            LinkedNode<E> temp = null;
             while (current != null) {
-                next = current.getNext();
-                current.setNext(previous);
-                previous = current;
-                current = next;
+                temp = current.getPrevious();
+                current.setPrevious(current.getNext());
+                current.setNext(temp);
+                current = current.getPrevious();
             }
-            head = previous;
+            if (temp != null) {
+                head = temp.getPrevious();
+            }
             return true;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
@@ -163,26 +163,27 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Gets an iterator over the elements in the collection.
+     * Gets an iterator over the elements in the iterator.
      *
-     * @return an iterator over the elements in the collection.
+     * @return an iterator over the elements in the iterator.
      */
     @Override
     public Iterator<E> iterator() {
-        inode = head;
         return new Iterator<E>() {
+            LinkedNode<E> current = head;
+
             @Override
             public boolean hasNext() {
-                return inode != null;
-            }   
+                return current != null;
+            }
 
             @Override
             public E next() {
                 if (!hasNext()) {
                     throw new NoSuchElementException("No more elements to list");
                 }
-                E element = inode.get();
-                inode = inode.getNext();
+                E element = current.get();
+                current = current.getNext();
                 return element;
             }
         };
@@ -197,12 +198,13 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public boolean add(E element) {
         try {
-            LinkedNode<E> newNode = new LinkedNode<>(element, null);
-            if (size == 0) {
+            LinkedNode<E> newNode = new LinkedNode<>(element);
+            if (head == null) {
                 head = newNode;
                 tail = newNode;
             } else {
                 tail.setNext(newNode);
+                newNode.setPrevious(tail);
                 tail = newNode;
             }
             size++;
@@ -233,11 +235,9 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Appends all of the elements in the specified collection to the end of this
-     * list.
+     * Appends all of the elements in the specified collection to the end of this list.
      *
-     * @param collection The collection containing elements to be added to this
-     *                   list.
+     * @param collection The collection containing elements to be added to this list.
      * @return 'true' if the collection was added successfully, otherwise 'false'.
      */
     @Override
@@ -245,8 +245,7 @@ public class LinkedList<E> extends AbstractList<E> {
         try {
             Iterator<E> iterator = collection.iterator();
             while (iterator.hasNext()) {
-                E element = iterator.next();
-                add(element);
+                add(iterator.next());
             }
             return true;
         } catch (Exception e) {
@@ -264,13 +263,14 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public boolean addFirst(E element) {
         try {
-            LinkedNode<E> current = new LinkedNode<>(element, null);
-            if (head == null && tail == null) {
-                head = current;
-                tail = current;
+            LinkedNode<E> newNode = new LinkedNode<>(element);
+            if (head == null) {
+                head = newNode;
+                tail = newNode;
             } else {
-                current.setNext(head);
-                head = current;
+                newNode.setNext(head);
+                head.setPrevious(newNode);
+                head = newNode;
             }
             size++;
             return true;
@@ -281,11 +281,9 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Appends all of the elements in the specified array at the beginning of this
-     * list.
+     * Appends all of the elements in the specified array at the beginning of this list.
      *
-     * @param array The array containing elements to be added at the beginning of
-     *              this list.
+     * @param array The array containing elements to be added at the beginning of this list.
      * @return 'true' if the array was added successfully, otherwise 'false'.
      */
     @Override
@@ -302,11 +300,9 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Appends all of the elements in the specified collection at the beginning of
-     * this list.
+     * Appends all of the elements in the specified collection at the beginning of this list.
      *
-     * @param collection The collection containing elements to be added at the
-     *                   beginning of this list.
+     * @param collection The collection containing elements to be added at the beginning of this list.
      * @return 'true' if the collection was added successfully, otherwise 'false'.
      */
     @Override
@@ -336,9 +332,7 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public E peek() {
         try {
-            if (head != null) {
-                return head.get();
-            }
+            return head.get();
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
@@ -353,9 +347,7 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public E peekLast() {
         try {
-            if (tail != null) {
-                return tail.get();
-            }
+            return tail.get();
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
@@ -371,21 +363,13 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public E[] peekArray(int n) {
         try {
-            if (head == null || n <= 0) {
-                return null;
-            }
-
-            E[] resultArray = (E[]) new Object[n];
+            E[] array = (E[]) new Object[n];
             LinkedNode<E> current = head;
-            int count = 0;
-
-            while (current != null && count < n) {
-                resultArray[count] = current.get();
+            for (int i = 0; i < n; i++) {
+                array[i] = current.get();
                 current = current.getNext();
-                count++;
             }
-
-            return resultArray;
+            return array;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
@@ -401,15 +385,13 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public E[] peekLastArray(int n) {
         try {
-            Iterator<E> iterator = this.iterator();
-            E[] save = (E[]) new Object[n];
-            for (int e = 0; e < size - n; e++) {
-                iterator.next();
+            E[] array = (E[]) new Object[n];
+            LinkedNode<E> current = tail;
+            for (int i = n - 1; i >= 0; i--) {
+                array[i] = current.get();
+                current = current.getPrevious();
             }
-            for (int i = 0; i < n && iterator.hasNext(); i++) {
-                save[i] = iterator.next();
-            }
-            return save;
+            return array;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
@@ -425,12 +407,13 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public List<E> peekCollection(int n) {
         try {
-            Iterator<E> iterator = this.iterator();
-            List<E> save = new LinkedList<>();
-            for (int i = 0; i < n && iterator.hasNext(); i++) {
-                save.add(iterator.next());
+            List<E> list = new LinkedList<>();
+            LinkedNode<E> current = head;
+            for (int i = 0; i < n; i++) {
+                list.add(current.get());
+                current = current.getNext();
             }
-            return save;
+            return list;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
@@ -446,16 +429,16 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public List<E> peekLastCollection(int n) {
         try {
-            if (n > size) {
-                n = size;
-            }
-            LinkedNode<E> current = this.head;
+            LinkedNode<E> current = head;
+            LinkedNode<E> previous = null;
             LinkedList<E> save = new LinkedList<>();
             for (int e = 0; e < size - n; e++) {
+                previous = current;
                 current = current.getNext();
             }
-            for (int i = 0; i < n && current != null; i++) {
+            for (int i = 0; i < n && !(current == head && previous != null); i++) {
                 save.add(current.get());
+                previous = current;
                 current = current.getNext();
             }
             return save;
@@ -473,23 +456,21 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public E poll() {
         try {
-            if (size == 0) {
-                return null;
-            } else {
-                E output = head.get();
-                if (size == 1) {
-                    head = head.getNext();
-                    tail = tail.getNext();
-                } else {
-                    head = head.getNext();
-                }
-                size--;
-                return output;
+            if (head == null) {
+                return null; // La lista está vacía
             }
+
+            E element = head.get();
+            head = head.getNext();
+            if (head != null) {
+                head.setPrevious(null);
+            }
+            size--;
+            return element;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+            return null;
         }
-        return null;
     }
 
     /**
@@ -500,29 +481,17 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public E pollLast() {
         try {
-            if (size == 0) {
-                return null;
-            } else if (size == 1) {
-                E element = tail.get();
-                head = null;
-                tail = null;
-                size = 0;
-                return element;
-            } else {
-                LinkedNode<E> current = head;
-                while (current.getNext() != tail) {
-                    current = current.getNext();
-                }
-                E element = tail.get();
-                tail = current;
+            E element = tail.get();
+            tail = tail.getPrevious();
+            if (tail != null) {
                 tail.setNext(null);
-                size--;
-                return element;
             }
+            size--;
+            return element;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
-            return null;
         }
+        return null;
     }
 
     /**
@@ -534,23 +503,11 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public E[] pollArray(int n) {
         try {
-            if (head == null || n <= 0) {
-                return null;
+            E[] array = (E[]) new Object[n];
+            for (int i = 0; i < n; i++) {
+                array[i] = poll();
             }
-
-            E[] resultArray = (E[]) new Object[n];
-            LinkedNode<E> current = head;
-            int count = 0;
-
-            while (current != null && count < n) {
-                resultArray[count] = current.get();
-                current = current.getNext();
-                count++;
-            }
-
-            head = current;
-            size -= count;
-            return resultArray;
+            return array;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
@@ -662,8 +619,7 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Removes the first occurrence of the specified element from this list, if it
-     * is present.
+     * Removes the first occurrence of the specified element from this list, if it is present.
      *
      * @param element The element to be removed from this list.
      * @return 'true' if the element was removed successfully, otherwise 'false'.
@@ -672,25 +628,27 @@ public class LinkedList<E> extends AbstractList<E> {
     public boolean remove(E element) {
         try {
             LinkedNode<E> current = head;
-            LinkedNode<E> previous = null;
-            while (current != null && !current.get().equals(element)) {
-                previous = current;
+            while (current != null) {
+                if (current.get().equals(element)) {
+                    if (current == head) {
+                        head = current.getNext();
+                        if (head != null) {
+                            head.setPrevious(null);
+                        }
+                    } else if (current == tail) {
+                        tail = current.getPrevious();
+                        if (tail != null) {
+                            tail.setNext(null);
+                        }
+                    } else {
+                        current.getPrevious().setNext(current.getNext());
+                        current.getNext().setPrevious(current.getPrevious());
+                    }
+                    size--;
+                    return true;
+                }
                 current = current.getNext();
             }
-            if (current == null) {
-                return false;
-            }
-            if (current == head) {
-                head = current.getNext();
-            } else {
-                previous.setNext(current.getNext());
-            }
-            if (current == tail) {
-                tail = previous;
-                tail.setNext(null);
-            }
-            size--;
-            return true;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
         }
@@ -698,12 +656,10 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Removes from this list all of its elements that are contained in the
-     * specified array.
+     * Removes from this list all of its elements that are contained in the specified array.
      *
      * @param array The array containing elements to be removed from this list.
-     * @return 'true' if the array elements were removed successfully, otherwise
-     *         'false'.
+     * @return 'true' if the array elements were removed successfully, otherwise 'false'.
      */
     @Override
     public boolean remove(E[] array) {
@@ -719,27 +675,23 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Removes from this list all of its elements that are contained in the
-     * specified collection.
+     * Removes from this list all of its elements that are contained in the specified collection.
      *
-     * @param collection The collection containing elements to be removed from this
-     *                   list.
-     * @return 'true' if the collection elements were removed successfully,
-     *         otherwise 'false'.
+     * @param collection The collection containing elements to be removed from this list.
+     * @return 'true' if the collection elements were removed successfully, otherwise 'false'.
      */
     @Override
     public boolean remove(Collection<E> collection) {
         try {
             Iterator<E> iterator = collection.iterator();
             while (iterator.hasNext()) {
-                E element = iterator.next();
-                remove(element);
+                remove(iterator.next());
             }
             return true;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+            return false;
         }
-        return false;
     }
 
     /**
@@ -752,17 +704,24 @@ public class LinkedList<E> extends AbstractList<E> {
     public boolean remove(Predicate<E> filter) {
         try {
             LinkedNode<E> current = head;
-            LinkedNode<E> previous = null;
             while (current != null) {
                 if (filter.test(current.get())) {
-                    if (previous == null) {
+                    if (current == head) {
                         head = current.getNext();
+                        if (head != null) {
+                            head.setPrevious(null);
+                        }
+                    } else if (current == tail) {
+                        tail = current.getPrevious();
+                        if (tail != null) {
+                            tail.setNext(null);
+                        }
                     } else {
-                        previous.setNext(current.getNext());
+                        current.getPrevious().setNext(current.getNext());
+                        current.getNext().setPrevious(current.getPrevious());
                     }
                     size--;
                 }
-                previous = current;
                 current = current.getNext();
             }
             return true;
@@ -773,24 +732,45 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Replaces each element of this list with the result of applying the function
-     * to that element.
+     * Replaces each element of this list with the result of applying the function to that element.
      *
      * @param element    The element to be replaced.
      * @param newElement The new element to replace the old one.
-     * @param comparator The comparator to determine if an element should be
-     *                   replaced.
+     * @param comparator The comparator to determine if an element should be replaced.
      * @return 'true' if elements were replaced successfully, otherwise 'false'.
      */
     @Override
     public boolean replace(E element, E newElement, Predicate<E> comparator) {
         try {
             LinkedNode<E> current = head;
-            while (current != null) {
-                if (comparator.test(current.get())) {
+            boolean elementReplaced = false;
+            for (int i = 0; i < size; i++) {
+                if (comparator.test(current.get()) && current.get().equals(element)) {
                     current.set(newElement);
+                    elementReplaced = true;
                 }
                 current = current.getNext();
+            }
+            return elementReplaced;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        }
+        return false;
+    }
+
+    /**
+     * Replaces each element of this list with the result of applying the function to that element.
+     *
+     * @param array      The array containing elements to be replaced.
+     * @param newArray   The array containing new elements to replace the old ones.
+     * @param comparator The comparator to determine if an element should be replaced.
+     * @return 'true' if elements were replaced successfully, otherwise 'false'.
+     */
+    @Override
+    public boolean replace(E[] array, E[] newArray, Predicate<E> comparator) {
+        try {
+            for (int i = 0; i < array.length; i++) {
+                replace(array[i], newArray[i], comparator);
             }
             return true;
         } catch (Exception e) {
@@ -800,47 +780,11 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Replaces each element of this list with the result of applying the function
-     * to that element.
-     *
-     * @param array      The array containing elements to be replaced.
-     * @param newArray   The array containing new elements to replace the old ones.
-     * @param comparator The comparator to determine if an element should be
-     *                   replaced.
-     * @return 'true' if elements were replaced successfully, otherwise 'false'.
-     */
-    @Override
-    public boolean replace(E[] array, E[] newArray, Predicate<E> comparator) {
-        try {
-            if (array.length != newArray.length) {
-                return false;
-            }
-
-            boolean replaced = false;
-            for (int i = 0; i < array.length; i++) {
-                E element = array[i];
-                E newElement = newArray[i];
-                if (comparator.test(element)) {
-                    replace(element, newElement, e -> e.equals(element));
-                    replaced = true;
-                }
-            }
-            return replaced;
-        } catch (Exception e) {
-            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
-            return false;
-        }
-    }
-
-    /**
-     * Replaces each element of this list with the result of applying the function
-     * to that element.
+     * Replaces each element of this list with the result of applying the function to that element.
      *
      * @param collection    The collection containing elements to be replaced.
-     * @param newCollection The collection containing new elements to replace the
-     *                      old ones.
-     * @param comparator    The comparator to determine if an element should be
-     *                      replaced.
+     * @param newCollection The collection containing new elements to replace the old ones.
+     * @param comparator    The comparator to determine if an element should be replaced.
      * @return 'true' if elements were replaced successfully, otherwise 'false'.
      */
     @Override
@@ -869,80 +813,96 @@ public class LinkedList<E> extends AbstractList<E> {
     }
 
     /**
-     * Retains only the elements in this list that are contained in the specified
-     * array.
+     * Retains only the elements in this list that are contained in the specified array.
      *
      * @param array The array containing elements to be retained in this list.
      * @return 'true' if elements were retained successfully, otherwise 'false'.
      */
     @Override
     public boolean retain(E[] array) {
-        LinkedNode<E> current = head;
-        LinkedNode<E> previous = null;
-        boolean elementsRetained = false;
-        while (current != null) {
-            boolean elementContained = false;
-            for (E arrayElement : array) {
-                if (arrayElement.equals(current.get())) {
-                    elementContained = true;
+        try {
+            LinkedNode<E> current = head;
+            while (current != null) {
+                boolean found = false;
+                for (E element : array) {
+                    if (current.get().equals(element)) {
+                        found = true;
+                        break;
+                    }
                 }
-            }
-            if (!elementContained) {
-                if (previous == null) {
-                    head = current.getNext();
-                } else {
-                    previous.setNext(current.getNext());
-                }
-                if (current == tail) {
-                    tail = previous;
-                    tail.setNext(null);
+                if (!found) {
+                    if (current == head) {
+                        head = current.getNext();
+                        if (head != null) {
+                            head.setPrevious(null);
+                        }
+                    } else if (current == tail) {
+                        tail = current.getPrevious();
+                        if (tail != null) {
+                            tail.setNext(null);
+                        }
+                    } else {
+                        current.getPrevious().setNext(current.getNext());
+                        current.getNext().setPrevious(current.getPrevious());
+                    }
+                    size--;
                 }
                 current = current.getNext();
-                elementsRetained = true;
-                size--;
-            } else {
-                previous = current;
-                current = current.getNext();
             }
+            return true;
+        } catch (Exception e) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+            return false;
         }
-        return elementsRetained;
     }
 
     /**
-     * Retains only the elements in this list that are contained in the specified
-     * collection.
+     * Retains only the elements in this list that are contained in the specified collection.
      *
-     * @param collection The collection containing elements to be retained in this
-     *                   list.
+     * @param collection The collection containing elements to be retained in this list.
      * @return 'true' if elements were retained successfully, otherwise 'false'.
      */
     @Override
     public boolean retain(Collection<E> collection) {
         try {
             LinkedNode<E> current = head;
-            LinkedNode<E> previous = null;
             while (current != null) {
-                if (!collection.contains(current.get())) {
-                    if (previous == null) {
+                boolean found = false;
+                Iterator<E> iterator = collection.iterator();
+                while (iterator.hasNext()) {
+                    if (current.get().equals(iterator.next())) {
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found) {
+                    if (current == head) {
                         head = current.getNext();
+                        if (head != null) {
+                            head.setPrevious(null);
+                        }
+                    } else if (current == tail) {
+                        tail = current.getPrevious();
+                        if (tail != null) {
+                            tail.setNext(null);
+                        }
                     } else {
-                        previous.setNext(current.getNext());
+                        current.getPrevious().setNext(current.getNext());
+                        current.getNext().setPrevious(current.getPrevious());
                     }
                     size--;
                 }
-                previous = current;
                 current = current.getNext();
             }
             return true;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+            return false;
         }
-        return false;
     }
 
     /**
-     * Replaces the specified element by a new element in this list. Only the first
-     * occurrence is replaced.
+     * Replaces the specified element by a new element in this list. Only the first occurrence is replaced.
      *
      * @param index   The index of the element to be replaced.
      * @param element The new element to replace the old one.
@@ -950,17 +910,19 @@ public class LinkedList<E> extends AbstractList<E> {
      */
     @Override
     public boolean set(E index, E element) {
-        try {
-            boolean set = false;
-            LinkedNode<E> current = head;
-            while (current.get() != index && !set) {
-                current = current.getNext();
-            }
-            current.set(element);
-            return true;
-        } catch (Exception e) {
-            Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+        if (index == null || element == null) {
+            return false;
         }
+
+        LinkedNode<E> current = head;
+        while (current != null) {
+            if (current.get().equals(index)) {
+                current.set(element);
+                return true;
+            }
+            current = current.getNext();
+        }
+
         return false;
     }
 
@@ -974,28 +936,25 @@ public class LinkedList<E> extends AbstractList<E> {
     public boolean sort(ToIntFunction<E> toInt) {
         try {
             for (int i = 0; i < size; i++) {
-                LinkedNode<E> inode = head;
-                LinkedNode<E> next = head.getNext();
+                LinkedNode<E> current = head;
                 for (int j = 0; j < size - 1; j++) {
-                    if (toInt.applyAsInt(inode.get()) > toInt.applyAsInt(next.get())) {
-                        E temp = inode.get();
-                        inode.set(next.get());
-                        next.set(temp);
+                    if (toInt.applyAsInt(current.get()) > toInt.applyAsInt(current.getNext().get())) {
+                        E temp = current.get();
+                        current.set(current.getNext().get());
+                        current.getNext().set(temp);
                     }
-                    inode = next;
-                    next = next.getNext();
+                    current = current.getNext();
                 }
             }
             return true;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+            return false;
         }
-        return false;
     }
 
     /**
-     * Returns a sub list of this list between the specified "from" and "to"
-     * indices.
+     * Returns a sub list of this list between the specified "from" and "to" indices.
      *
      * @param from The starting index of the sub list.
      * @param to   The ending index of the sub list.
@@ -1023,18 +982,16 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public E[] toArray() {
         try {
-            E[] resultArray = (E[]) new Object[size];
+            E[] array = (E[]) new Object[size];
             LinkedNode<E> current = head;
-            int count = 0;
-            while (current != null) {
-                resultArray[count] = current.get();
+            for (int i = 0; i < size; i++) {
+                array[i] = current.get();
                 current = current.getNext();
-                count++;
             }
-            return resultArray;
+            return array;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
+            return null;
         }
-        return null;
     }
 }
