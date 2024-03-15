@@ -174,7 +174,7 @@ public class LinkedList<E> extends AbstractList<E> {
             @Override
             public boolean hasNext() {
                 return inode != null;
-            }   
+            }
 
             @Override
             public E next() {

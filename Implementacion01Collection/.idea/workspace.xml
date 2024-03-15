@@ -12,9 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d08aed-4bf5-4ec1-bbe3-8437b717cdc6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Implementaciones y Quiz1.zip" beforeDir="false" />
-    </list>
+    <list default="true" id="61d08aed-4bf5-4ec1-bbe3-8437b717cdc6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +84,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.jdks/openjdk-21.0.2/lib/src.zip!/java.base/java/util/Collection.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/raul/EjercicioPractica/Main.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -98,119 +97,120 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.ArrayTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testAdd.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testAddArrayAtIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testAddAtIndexWithArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testAddAtIndexWithArrayMoreSpacesThan.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testAddAtIndexWithCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testAddAtIndexWithCollectionMoreSpacesThan.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testAddCollectionAtIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testAddElement.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testContains.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testContainsCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testDefragment.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testRemoveAtIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testRemoveByFilter.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testRemoveRange.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayTest.testSize.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest (2).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testAdd (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testAdd.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testAddArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testAddCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testAddFirst.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testAddFirstArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testAddFirstCollection (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testAddFirstCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testClear.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testContains.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testContainsArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testContainsCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testIsEmpty.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPeek.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPeekArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPeekCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPeekLast.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPeekLastArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPeekLastCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPoll.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollArrayOneElement.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollCollectionUniqueElement.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollLast.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollLastArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollLastArrayUniqueItem.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollLastCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollLastCollectionUniqueElement.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollLastUniqueElement.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollTwoElement.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testPollUniqueElement.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testRemove.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testRemoveArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testRemoveCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testRemovePredicate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testRemoveTail.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testReplace.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testReplaceArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testReplaceCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testRetainArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testRetainCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testReverse.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testSet.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testSize.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testSort.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testSubList.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.testToArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedlistTest.testAdd.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PriorityQueueTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PriorityQueueTest.testExtract.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PriorityQueueTest.testPeek.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QueueTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QueueTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QueueTest.testContains.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QueueTest.testExtract.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QueueTest.testInsert.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QueueTest.testPeek.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QueueTest.testSize.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StackTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StackTest.testPeek.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StackTest.testPushAndPeek.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testAddTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testDisplayTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testMarkCompleted.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testRemoveCompletedTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testRemoveTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testSortTasksByName.executor&quot;: &quot;Run&quot;,
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/home/raul/ReposUPB/EstructuraDeDatos/Implementacion01Collection/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/raul/ReposUPB/workspaces.edu.ds&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/raul/UpbRepositorios/EstructuraDeDatos/Implementacion01Collection/src/main/java/raul/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets.disable.when&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.ArrayTest.executor": "Run",
+    "JUnit.ArrayTest.testAdd.executor": "Run",
+    "JUnit.ArrayTest.testAddArrayAtIndex.executor": "Run",
+    "JUnit.ArrayTest.testAddAtIndexWithArray.executor": "Run",
+    "JUnit.ArrayTest.testAddAtIndexWithArrayMoreSpacesThan.executor": "Run",
+    "JUnit.ArrayTest.testAddAtIndexWithCollection.executor": "Run",
+    "JUnit.ArrayTest.testAddAtIndexWithCollectionMoreSpacesThan.executor": "Run",
+    "JUnit.ArrayTest.testAddCollectionAtIndex.executor": "Run",
+    "JUnit.ArrayTest.testAddElement.executor": "Run",
+    "JUnit.ArrayTest.testContains.executor": "Run",
+    "JUnit.ArrayTest.testContainsCollection.executor": "Run",
+    "JUnit.ArrayTest.testDefragment.executor": "Run",
+    "JUnit.ArrayTest.testRemoveAtIndex.executor": "Run",
+    "JUnit.ArrayTest.testRemoveByFilter.executor": "Run",
+    "JUnit.ArrayTest.testRemoveRange.executor": "Run",
+    "JUnit.ArrayTest.testSize.executor": "Run",
+    "JUnit.LinkedListTest (1).executor": "Run",
+    "JUnit.LinkedListTest (2).executor": "Run",
+    "JUnit.LinkedListTest.executor": "Run",
+    "JUnit.LinkedListTest.testAdd (1).executor": "Run",
+    "JUnit.LinkedListTest.testAdd.executor": "Run",
+    "JUnit.LinkedListTest.testAddArray.executor": "Run",
+    "JUnit.LinkedListTest.testAddCollection.executor": "Run",
+    "JUnit.LinkedListTest.testAddFirst.executor": "Run",
+    "JUnit.LinkedListTest.testAddFirstArray.executor": "Run",
+    "JUnit.LinkedListTest.testAddFirstCollection (1).executor": "Run",
+    "JUnit.LinkedListTest.testAddFirstCollection.executor": "Run",
+    "JUnit.LinkedListTest.testClear.executor": "Run",
+    "JUnit.LinkedListTest.testContains.executor": "Run",
+    "JUnit.LinkedListTest.testContainsArray.executor": "Run",
+    "JUnit.LinkedListTest.testContainsCollection.executor": "Run",
+    "JUnit.LinkedListTest.testIsEmpty.executor": "Run",
+    "JUnit.LinkedListTest.testPeek.executor": "Run",
+    "JUnit.LinkedListTest.testPeekArray.executor": "Run",
+    "JUnit.LinkedListTest.testPeekCollection.executor": "Run",
+    "JUnit.LinkedListTest.testPeekLast.executor": "Run",
+    "JUnit.LinkedListTest.testPeekLastArray.executor": "Run",
+    "JUnit.LinkedListTest.testPeekLastCollection.executor": "Run",
+    "JUnit.LinkedListTest.testPoll.executor": "Run",
+    "JUnit.LinkedListTest.testPollArray.executor": "Run",
+    "JUnit.LinkedListTest.testPollArrayOneElement.executor": "Run",
+    "JUnit.LinkedListTest.testPollCollection.executor": "Run",
+    "JUnit.LinkedListTest.testPollCollectionUniqueElement.executor": "Run",
+    "JUnit.LinkedListTest.testPollLast.executor": "Run",
+    "JUnit.LinkedListTest.testPollLastArray.executor": "Run",
+    "JUnit.LinkedListTest.testPollLastArrayUniqueItem.executor": "Run",
+    "JUnit.LinkedListTest.testPollLastCollection.executor": "Run",
+    "JUnit.LinkedListTest.testPollLastCollectionUniqueElement.executor": "Run",
+    "JUnit.LinkedListTest.testPollLastUniqueElement.executor": "Run",
+    "JUnit.LinkedListTest.testPollTwoElement.executor": "Run",
+    "JUnit.LinkedListTest.testPollUniqueElement.executor": "Run",
+    "JUnit.LinkedListTest.testRemove.executor": "Run",
+    "JUnit.LinkedListTest.testRemoveArray.executor": "Run",
+    "JUnit.LinkedListTest.testRemoveCollection.executor": "Run",
+    "JUnit.LinkedListTest.testRemovePredicate.executor": "Run",
+    "JUnit.LinkedListTest.testRemoveTail.executor": "Run",
+    "JUnit.LinkedListTest.testReplace.executor": "Run",
+    "JUnit.LinkedListTest.testReplaceArray.executor": "Run",
+    "JUnit.LinkedListTest.testReplaceCollection.executor": "Run",
+    "JUnit.LinkedListTest.testRetainArray.executor": "Run",
+    "JUnit.LinkedListTest.testRetainCollection.executor": "Run",
+    "JUnit.LinkedListTest.testReverse.executor": "Run",
+    "JUnit.LinkedListTest.testSet.executor": "Run",
+    "JUnit.LinkedListTest.testSize.executor": "Run",
+    "JUnit.LinkedListTest.testSort.executor": "Run",
+    "JUnit.LinkedListTest.testSubList.executor": "Run",
+    "JUnit.LinkedListTest.testToArray.executor": "Run",
+    "JUnit.LinkedlistTest.testAdd.executor": "Run",
+    "JUnit.PriorityQueueTest.executor": "Run",
+    "JUnit.PriorityQueueTest.testExtract.executor": "Run",
+    "JUnit.PriorityQueueTest.testPeek.executor": "Run",
+    "JUnit.QueueTest (1).executor": "Run",
+    "JUnit.QueueTest.executor": "Run",
+    "JUnit.QueueTest.testContains.executor": "Run",
+    "JUnit.QueueTest.testExtract.executor": "Run",
+    "JUnit.QueueTest.testInsert.executor": "Run",
+    "JUnit.QueueTest.testPeek.executor": "Run",
+    "JUnit.QueueTest.testSize.executor": "Run",
+    "JUnit.StackTest.executor": "Run",
+    "JUnit.StackTest.testPeek.executor": "Run",
+    "JUnit.StackTest.testPushAndPeek.executor": "Run",
+    "JUnit.TaskManagerTest.executor": "Run",
+    "JUnit.TaskManagerTest.testAddTask.executor": "Run",
+    "JUnit.TaskManagerTest.testDisplayTasks.executor": "Run",
+    "JUnit.TaskManagerTest.testMarkCompleted.executor": "Run",
+    "JUnit.TaskManagerTest.testRemoveCompletedTasks.executor": "Run",
+    "JUnit.TaskManagerTest.testRemoveTask.executor": "Run",
+    "JUnit.TaskManagerTest.testSortTasksByName.executor": "Run",
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/home/raul/ReposUPB/EstructuraDeDatos/Implementacion01Collection/src/test/java",
+    "last_opened_file_path": "/home/raul/ReposUPB/workspaces.edu.ds",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/raul/UpbRepositorios/EstructuraDeDatos/Implementacion01Collection/src/main/java/raul/example/Main.java",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="raul.SGTTP.Model.repository" />
@@ -231,18 +231,16 @@
       <recent name="raul.Model.linkedlist.doubly" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PriorityQueueTest">
-    <configuration name="ArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="raul.EjercicioPractica.Main" />
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.array.*" />
+          <option name="PATTERN" value="raul.EjercicioPractica.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.array" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.array.ArrayTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -310,19 +308,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.PriorityQueueTest.testExtract" />
-      <item itemvalue="JUnit.ArrayTest" />
       <item itemvalue="JUnit.LinkedListTest (1)" />
       <item itemvalue="JUnit.LinkedListTest.testSet" />
       <item itemvalue="JUnit.PriorityQueueTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PriorityQueueTest" />
         <item itemvalue="JUnit.PriorityQueueTest.testExtract" />
         <item itemvalue="JUnit.LinkedListTest (1)" />
         <item itemvalue="JUnit.LinkedListTest.testSet" />
-        <item itemvalue="JUnit.ArrayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -406,6 +404,8 @@
       <workItem from="1710339113135" duration="741000" />
       <workItem from="1710344705491" duration="1740000" />
       <workItem from="1710377065728" duration="3901000" />
+      <workItem from="1710426782322" duration="475000" />
+      <workItem from="1710427264430" duration="8353000" />
     </task>
     <task id="LOCAL-00001" summary="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java">
       <option name="closed" value="true" />
@@ -432,6 +432,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java" />
     <option name="LAST_COMMIT_MESSAGE" value="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Implementacion01Collection$ArrayTest.ic" NAME="ArrayTest Coverage Results" MODIFIED="1707934108180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

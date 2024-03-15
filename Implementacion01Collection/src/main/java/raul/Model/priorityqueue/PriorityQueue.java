@@ -13,7 +13,6 @@ public class PriorityQueue<E> extends AbstractPriorityQueue<E> {
     Array<Queue<E>> priorityQueue;
     int priorities;
 
-
     public PriorityQueue(int priorities) {
         this.priorities = priorities;
         priorityQueue = new Array<>(priorities);

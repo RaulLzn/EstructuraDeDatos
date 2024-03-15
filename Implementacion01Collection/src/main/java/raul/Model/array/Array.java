@@ -213,7 +213,6 @@ public class Array<E> extends AbstractArray<E> {
                 return false;
             }
             elements[index] = null;
-            defragment();
             return true;
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, e.getMessage(), e);
@@ -425,9 +424,9 @@ public class Array<E> extends AbstractArray<E> {
     @Override
     public boolean reverse() {
         try {
-            E[] newElements = (E[]) new Object[elements.length];
-            for (int ii = 0; ii < elements.length; ii++) {
-                newElements[ii] = elements[elements.length - 1 - ii];
+            E[] newElements = (E[]) new Object[size()];
+            for (int ii = 0; ii < size(); ii++) {
+                newElements[ii] = elements[size() - 1 - ii];
             }
             elements = newElements;
             return true;
@@ -444,7 +443,13 @@ public class Array<E> extends AbstractArray<E> {
      */
     @Override
     public int size() {
-        return elements.length;
+        int count = 0;
+        for (int i = 0; i < elements.length; i++) {
+            if (elements[i] != null) {
+                count++;
+            }
+        }
+        return count;
     }
 
     /**
@@ -472,7 +477,7 @@ public class Array<E> extends AbstractArray<E> {
 
             @Override
             public boolean hasNext() {
-                return index < elements.length;
+                return index < size();
             }
 
             @Override

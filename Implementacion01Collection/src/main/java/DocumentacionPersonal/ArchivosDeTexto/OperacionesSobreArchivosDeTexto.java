@@ -7,7 +7,7 @@ public class OperacionesSobreArchivosDeTexto {
     /*
     Crear un archivo de texto
     Para crear un archivo de texto en Java, puedes utilizar la clase FileWriter junto con BufferedWriter para
-    escribir texto en el archivo. Aquí tienes un ejemplo:
+    escribir texto en el archivo.
      */
 
     public class CrearArchivoTexto {
@@ -25,7 +25,7 @@ public class OperacionesSobreArchivosDeTexto {
 
     /*
     Leer un archivo de texto
-    Para leer un archivo de texto en Java, puedes utilizar BufferedReader. Aquí tienes un ejemplo:
+    Para leer un archivo de texto en Java, puedes utilizar BufferedReader.
      */
     public class LeerArchivoTexto {
         public static void main(String[] args) {
@@ -45,7 +45,7 @@ public class OperacionesSobreArchivosDeTexto {
     /*
     Editar un archivo de texto
     Para editar un archivo de texto en Java, puedes leer el archivo, hacer los cambios necesarios en la memoria
-    y luego escribir los cambios de vuelta al archivo. Aquí hay un ejemplo simple:
+    y luego escribir los cambios de vuelta al archivo.
      */
 
     public class EditarArchivoTexto {
@@ -75,7 +75,7 @@ public class OperacionesSobreArchivosDeTexto {
 
     /*
     Eliminar un archivo de texto
-    Puedes eliminar un archivo de texto utilizando el método delete() de la clase File. Aquí tienes un ejemplo:
+    Puedes eliminar un archivo de texto utilizando el método delete() de la clase File.
      */
     public class EliminarArchivoTexto {
         public static void main(String[] args) {
@@ -90,7 +90,7 @@ public class OperacionesSobreArchivosDeTexto {
 
     /*
     Verificar la existencia de un archivo de texto
-    Puedes verificar si un archivo de texto existe utilizando el método exists() de la clase File. Aquí tienes un ejemplo:
+    Puedes verificar si un archivo de texto existe utilizando el método exists() de la clase File.
      */
     public class VerificarExistenciaArchivo {
         public static void main(String[] args) {
@@ -105,7 +105,7 @@ public class OperacionesSobreArchivosDeTexto {
 
     /*
     Renombrar un archivo de texto
-    Puedes renombrar un archivo de texto utilizando el método renameTo() de la clase File. Aquí tienes un ejemplo:
+    Puedes renombrar un archivo de texto utilizando el método renameTo() de la clase File.
      */
     public class RenombrarArchivoTexto {
         public static void main(String[] args) {
@@ -122,7 +122,7 @@ public class OperacionesSobreArchivosDeTexto {
     /*
     Obtener información sobre un archivo de texto
     Puedes obtener información sobre un archivo de texto, como su tamaño, ruta absoluta, etc.,
-    utilizando varios métodos de la clase File. Aquí hay un ejemplo:
+    utilizando varios métodos de la clase File.
      */
     public class InformacionArchivoTexto {
         public static void main(String[] args) {
@@ -139,7 +139,6 @@ public class OperacionesSobreArchivosDeTexto {
     Leer y escribir archivos grandes
     Cuando trabajas con archivos grandes, puede ser más eficiente leer y
     escribir en bloques o líneas en lugar de cargar todo el contenido en memoria de una vez.
-    Aquí tienes un ejemplo de cómo leer y escribir archivos grandes línea por línea:
      */
     public class LeerEscribirArchivoGrande {
         public static void main(String[] args) {
@@ -168,7 +167,7 @@ public class OperacionesSobreArchivosDeTexto {
     /*
     Leer y escribir archivos en diferentes codificaciones
     Puedes especificar la codificación al leer o escribir archivos para manejar
-    diferentes juegos de caracteres. Aquí tienes un ejemplo:
+    diferentes juegos de caracteres.
      */
     public class LeerEscribirCodificacion {
         public static void main(String[] args) {
@@ -193,7 +192,6 @@ public class OperacionesSobreArchivosDeTexto {
     /*
     Operaciones avanzadas: Serialización de objetos
     Además de trabajar con archivos de texto, puedes serializar objetos Java y guardarlos en archivos.
-    Aquí tienes un ejemplo básico de serialización y deserialización:
      */
     public class MiObjeto implements Serializable {
         // Atributos y métodos de la clase
