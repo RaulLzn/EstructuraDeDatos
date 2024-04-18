@@ -2,8 +2,8 @@ package raul.Model.TaskManager.TaskManager;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import raul.Model.TaskManager.Task;
-import raul.Model.array.Array;
+import raul.TaskManager.Task;
+import raul.TaskManager.TaskManager.TaskManager;
 
 import static org.junit.jupiter.api.Assertions.*;
 

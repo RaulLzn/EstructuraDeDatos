@@ -1,0 +1,46 @@
+[
+  {
+    "idCita": "MV230",
+    "idPaciente": "3",
+    "pagado": true,
+    "tomado": false,
+    "costo": "2500",
+    "motivoCita": "VALORACION",
+    "especialidad": "MEDICINA_GENERAL",
+    "medico": "123456",
+    "generadorCodigo": {}
+  },
+  {
+    "idCita": "DV238",
+    "idPaciente": "2",
+    "pagado": true,
+    "tomado": false,
+    "costo": "4500",
+    "motivoCita": "VALORACION",
+    "especialidad": "DERMATOLOGIA",
+    "medico": "123456",
+    "generadorCodigo": {}
+  },
+  {
+    "idCita": "MV230",
+    "idPaciente": "3",
+    "pagado": true,
+    "tomado": false,
+    "costo": "2500",
+    "motivoCita": "VALORACION",
+    "especialidad": "MEDICINA_GENERAL",
+    "medico": "123456",
+    "generadorCodigo": {}
+  },
+  {
+    "idCita": "DV759",
+    "idPaciente": "2",
+    "pagado": true,
+    "tomado": false,
+    "costo": "4500",
+    "motivoCita": "VALORACION",
+    "especialidad": "DERMATOLOGIA",
+    "medico": "123456",
+    "generadorCodigo": {}
+  }
+]

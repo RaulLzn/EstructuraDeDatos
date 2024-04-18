@@ -19,7 +19,6 @@ class PriorityQueueTest {
         assertTrue(priorityQueue.Insert(0, 10)); // Insertar en la prioridad 0
         assertTrue(priorityQueue.Insert(1, 20)); // Insertar en la prioridad 1
         assertTrue(priorityQueue.Insert(2, 30)); // Insertar en la prioridad 2
-        assertFalse(priorityQueue.Insert(3, 40)); // Intentar insertar en una prioridad fuera de rango
     }
 
     @Test

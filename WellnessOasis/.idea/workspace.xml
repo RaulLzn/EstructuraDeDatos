@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="489e4bc6-b07b-416e-9148-5a67db1df16e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Arbol/src/main/java/raul/bintree/BinTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arbol/src/main/java/raul/bintree/ProblemaTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arbol/src/main/java/raul/node/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EstructurasNoLIneales/src/main/java/raul/hash/hashTable/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Implementacion01Collection/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/noLineales/binTree/BinTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/artifacts/EstructurasDeDatos_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/Stack/array/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/Stack/list/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/array/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/array/io/AbstractSerializableArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/array/io/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/doubly/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/doubly/circular/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/node/doubly/LinkedNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/node/singly/LinkedNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/singly/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/singly/circular/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/priorityqueue/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/queue/array/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/queue/list/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/Iterator/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/Queue/AbstractQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/Queue/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/array/AbstractArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/array/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/collection/AbstractCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/collection/Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/iterable/Iterable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/list/AbstractList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/node/AbstractNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/node/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/priorityqueue/AbstractPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/priorityqueue/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/stack/AbstractStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/Stack/list/StackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/array/ArrayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/linkedlist/doubly/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/linkedlist/doubly/circular/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/linkedlist/singly/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/linkedlist/singly/circular/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/priorityqueue/PriorityQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/queue/array/QueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/queue/list/QueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/Main/MainAutorizaciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/Main/MainCitas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/Main/MainMedicos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/Main/MainPacientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/Main/MainRegistroExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/AutorizacionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/CitasController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/MedicosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/PacientesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/PruebaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/RegistroExamenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/SalaEsperaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/ViewRegistroPacienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/Autorizacion.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/Final.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/HistorialCitas.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/Medicos.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/Pacientes.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/RegistroExamen.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/SalaEspera.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/historialCitas.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/GeneradorCodigo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/interfaces/DoubleLinkedListInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/interfaces/QueueInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/interfaces/StackInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/listas/DoubleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/listas/QueueList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/listas/StackList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/Especialidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/Medico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/MotivoCita/Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/MotivoCita/Examen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/MotivoCita/Valoracion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/RegistroExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/TipoDocumento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/domain/cita/Cita.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/domain/cita/CitaExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/domain/paciente/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/AutorizacionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/CitaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/FinalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/MedicoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/PacientesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/RegistroExamenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/SalaEsperaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/shared/FileJsonAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/MainAplicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/ViewAutorizarExamen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/ViewLogin.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/ViewPaciente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/ViewRegistroCita.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/ViewRegistroPaciente.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/.idea/copilot/chatSessions/blobs/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/.idea/copilot/chatSessions/xd.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/Stack/array/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/Stack/array/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/Stack/list/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/Stack/list/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/TaskManager/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/TaskManager/TaskManager/TaskManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/TaskManager/TaskManager/TaskManagerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/linkedlist/singly/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/linkedlist/singly/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/priorityqueue/PriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/priorityqueue/PriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/util/Queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/util/Queue/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/util/array/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/util/array/Array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/util/list/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/util/list/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/util/priorityqueue/PriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/util/priorityqueue/PriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/util/stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Model/util/stack/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Parcial1/BagManager/Objetos/Bag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Parcial1/BagManager/Objetos/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Parcial1/BagManager/Objetos/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Parcial1/BagManager/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/main/java/raul/Parcial1/BagManager/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/test/java/raul/Model/TaskManager/TaskManager/TaskManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/test/java/raul/Model/TaskManager/TaskManager/TaskManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Implementacion01Collection/src/test/java/raul/Model/priorityqueue/PriorityQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Implementacion01Collection/src/test/java/raul/Model/priorityqueue/PriorityQueueTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RaulLzn"
+  }
+}]]></component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RaulLzn/EstructuraDeDatos.git",
+    "accountId": "b4bc37fc-d533-4fd3-9a06-2e8c326681ad"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2f3pnVBANaHcqmw0S9kP0Dy1Fy2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="489e4bc6-b07b-416e-9148-5a67db1df16e" name="Changes" comment="" />
+      <created>1713039785025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713039785025</updated>
+      <workItem from="1713039786144" duration="160000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

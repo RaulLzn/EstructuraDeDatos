@@ -977,4 +977,24 @@ public class LinkedList<E> extends AbstractList<E> {
             return null;
         }
     }
+
+    /**
+     * Returns a string representation of the list.
+     *
+     * @return A string representation of the list.
+     */
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        LinkedNode<E> current = head;
+        for (int i = 0; i < size; i++) {
+            sb.append(current.get());
+            if (i < size - 1) {
+                sb.append(", ");
+            }
+            current = current.getNext();
+        }
+        return sb.toString();
+    }
+
 }

@@ -4,21 +4,17 @@ public class Item {
     public String name;
     public int priority;
     public int rank;
-    public enum Type {CLOTH, LEATER, PLATE};
+    public Type type;
     public int durability;
     public String description;
 
-    public Item(String name, int priority, int rank, int durability, String description) {
+
+    public Item(String name, int priority, int rank, Type type, int durability, String description) {
         this.name = name;
-        if (priority >= 0 && priority < 4)
-            this.priority = priority;
-        else System.out.println("Prioridad por fuera del rango");
-        if (rank >= 0 && rank < 1000)
-            this.rank = rank;
-        else System.out.println("Rango por fuera del rango");
-        if (durability >= 0 && durability <= 1)
-            this.durability = durability;
-        else System.out.println("Durabilidad por fuera del rango");
+        this.priority = priority;
+        this.rank = rank;
+        this.type = type;
+        this.durability = durability;
         this.description = description;
     }
 
@@ -46,6 +42,14 @@ public class Item {
         this.rank = rank;
     }
 
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
     public int getDurability() {
         return durability;
     }
@@ -60,5 +64,17 @@ public class Item {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "name='" + name + '\'' +
+                ", priority=" + priority +
+                ", rank=" + rank +
+                ", type=" + type +
+                ", durability=" + durability +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

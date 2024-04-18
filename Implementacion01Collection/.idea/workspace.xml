@@ -12,7 +12,231 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d08aed-4bf5-4ec1-bbe3-8437b717cdc6" name="Changes" comment="" />
+    <list default="true" id="61d08aed-4bf5-4ec1-bbe3-8437b717cdc6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Arbol/src/main/java/raul/bintree/BinTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arbol/src/main/java/raul/bintree/ProblemaTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arbol/src/main/java/raul/node/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EstructurasNoLIneales/src/main/java/raul/hash/hashTable/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/artifacts/EstructurasDeDatos_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/Stack/array/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/Stack/list/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/array/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/array/io/AbstractSerializableArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/array/io/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/doubly/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/doubly/circular/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/node/doubly/LinkedNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/node/singly/LinkedNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/singly/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/linkedlist/singly/circular/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/priorityqueue/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/queue/array/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/queue/list/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/Iterator/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/Queue/AbstractQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/Queue/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/array/AbstractArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/array/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/collection/AbstractCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/collection/Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/iterable/Iterable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/list/AbstractList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/node/AbstractNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/node/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/priorityqueue/AbstractPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/priorityqueue/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/stack/AbstractStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/main/java/raul/Model/util/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/Stack/list/StackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/array/ArrayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/linkedlist/doubly/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/linkedlist/doubly/circular/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/linkedlist/singly/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/linkedlist/singly/circular/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/priorityqueue/PriorityQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/queue/array/QueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jars/EstructurasDeDatos/src/test/java/Model/queue/list/QueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/Main/MainAutorizaciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/Main/MainCitas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/Main/MainMedicos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/Main/MainPacientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/Main/MainRegistroExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/AutorizacionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/CitasController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/MedicosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/PacientesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/PruebaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/RegistroExamenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/SalaEsperaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/controller/ViewRegistroPacienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/Autorizacion.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/Final.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/HistorialCitas.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/Medicos.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/Pacientes.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/RegistroExamen.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/SalaEspera.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/dataBase/historialCitas.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/GeneradorCodigo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/interfaces/DoubleLinkedListInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/interfaces/QueueInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/interfaces/StackInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/listas/DoubleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/listas/QueueList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/estructurasDatos/listas/StackList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/Especialidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/Medico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/MotivoCita/Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/MotivoCita/Examen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/MotivoCita/Valoracion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/RegistroExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/TipoDocumento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/domain/cita/Cita.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/domain/cita/CitaExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/domain/paciente/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/AutorizacionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/CitaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/FinalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/MedicoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/PacientesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/RegistroExamenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/model/repository/SalaEsperaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/shared/FileJsonAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/MainAplicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/ViewAutorizarExamen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/ViewLogin.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/ViewPaciente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/ViewRegistroCita.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mamenlo/src/main/java/view/ViewRegistroPaciente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/Main/MainAutorizaciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/Main/MainCitas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/Main/MainMedicos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/Main/MainPacientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/Main/MainRegistroExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/PrimaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/SecondaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/controller/AutorizacionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/controller/CitasController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/controller/MedicosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/controller/PacientesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/controller/PruebaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/controller/RegistroExamenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/controller/SalaEsperaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/controller/ViewRegistroPacienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/dataBase/Autorizacion.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/dataBase/Final.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/dataBase/HistorialCitas.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/dataBase/Medicos.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/dataBase/Pacientes.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/dataBase/RegistroExamen.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/dataBase/SalaEspera.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/dataBase/historialCitas.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/estructurasDatos/GeneradorCodigo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/estructurasDatos/interfaces/DoubleLinkedListInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/estructurasDatos/interfaces/QueueInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/estructurasDatos/interfaces/StackInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/estructurasDatos/listas/DoubleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/estructurasDatos/listas/QueueList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/estructurasDatos/listas/StackList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/Especialidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/Medico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/MotivoCita/Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/MotivoCita/Examen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/MotivoCita/Valoracion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/RegistroExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/TipoDocumento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/domain/cita/Cita.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/domain/cita/CitaExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/domain/paciente/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/repository/AutorizacionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/repository/CitaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/repository/FinalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/repository/MedicoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/repository/PacientesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/repository/RegistroExamenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/model/repository/SalaEsperaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/shared/FileJsonAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/view/MainAplicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/view/ViewAutorizarExamen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/view/ViewLogin.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/view/ViewPaciente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/view/ViewRegistroCita.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/java/wellnessoasis/view/ViewRegistroPaciente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/resources/wellnessoasis/primary.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis05/src/main/resources/wellnessoasis/secondary.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Hi/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Hi/MainAplicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Hi/PrimaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Hi/SecondaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Hi/ViewAutorizarExamen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Hi/ViewLogin.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Hi/ViewPaciente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Hi/ViewRegistroCita.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Hi/ViewRegistroPaciente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Main/MainAutorizaciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Main/MainCitas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Main/MainMedicos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Main/MainPacientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/Main/MainRegistroExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/controller/AutorizacionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/controller/CitasController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/controller/MedicosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/controller/PacientesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/controller/PruebaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/controller/RegistroExamenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/controller/SalaEsperaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/controller/ViewRegistroPacienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/dataBase/Autorizacion.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/dataBase/Final.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/dataBase/HistorialCitas.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/dataBase/Medicos.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/dataBase/Pacientes.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/dataBase/RegistroExamen.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/dataBase/SalaEspera.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/dataBase/historialCitas.Json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/estructurasDatos/GeneradorCodigo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/estructurasDatos/interfaces/DoubleLinkedListInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/estructurasDatos/interfaces/QueueInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/estructurasDatos/interfaces/StackInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/estructurasDatos/listas/DoubleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/estructurasDatos/listas/QueueList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/estructurasDatos/listas/StackList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/Especialidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/Medico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/MotivoCita/Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/MotivoCita/Examen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/MotivoCita/Valoracion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/RegistroExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/TipoDocumento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/domain/cita/Cita.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/domain/cita/CitaExamen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/domain/paciente/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/repository/AutorizacionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/repository/CitaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/repository/FinalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/repository/MedicoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/repository/PacientesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/repository/RegistroExamenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/model/repository/SalaEsperaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/java/shared/FileJsonAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/resources/Hi/primary.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WellnessOasis06/src/main/resources/Hi/secondary.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,8 +245,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -74,14 +300,12 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="b4bc37fc-d533-4fd3-9a06-2e8c326681ad" />
-        <option name="url" value="https://github.com/RaulLzn/EstructuraDeDatos.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RaulLzn/EstructuraDeDatos.git&quot;,
+    &quot;accountId&quot;: &quot;b4bc37fc-d533-4fd3-9a06-2e8c326681ad&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.jdks/openjdk-21.0.2/lib/src.zip!/java.base/java/util/Collection.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/raul/EjercicioPractica/Main.java" root0="FORCE_HIGHLIGHTING" />
@@ -99,7 +323,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BinTreeTest.executor": "Run",
+    "Application.ConversionNumerica.executor": "Run",
+    "Application.HexadecimalToOctal.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.OctalToHexadecimal.executor": "Run",
+    "Application.Player.executor": "Run",
+    "Application.PlayerTest.executor": "Run",
+    "Application.PolyOperations.executor": "Run",
+    "Application.STD.executor": "Run",
+    "Application.ValidadorHTML.executor": "Run",
+    "Application.WebEditor.executor": "Run",
     "JUnit.ArrayTest.executor": "Run",
     "JUnit.ArrayTest.testAdd.executor": "Run",
     "JUnit.ArrayTest.testAddArrayAtIndex.executor": "Run",
@@ -116,6 +350,9 @@
     "JUnit.ArrayTest.testRemoveByFilter.executor": "Run",
     "JUnit.ArrayTest.testRemoveRange.executor": "Run",
     "JUnit.ArrayTest.testSize.executor": "Run",
+    "JUnit.BinTreeTest.executor": "Run",
+    "JUnit.BinTreeTest.testDelete.executor": "Run",
+    "JUnit.BinTreeTest.testPreOrder.executor": "Run",
     "JUnit.LinkedListTest (1).executor": "Run",
     "JUnit.LinkedListTest (2).executor": "Run",
     "JUnit.LinkedListTest.executor": "Run",
@@ -168,9 +405,11 @@
     "JUnit.LinkedListTest.testSubList.executor": "Run",
     "JUnit.LinkedListTest.testToArray.executor": "Run",
     "JUnit.LinkedlistTest.testAdd.executor": "Run",
+    "JUnit.PlayerTest.executor": "Run",
     "JUnit.PriorityQueueTest.executor": "Run",
     "JUnit.PriorityQueueTest.testExtract.executor": "Run",
     "JUnit.PriorityQueueTest.testPeek.executor": "Run",
+    "JUnit.PriorityQueueTest.testinsert.executor": "Run",
     "JUnit.QueueTest (1).executor": "Run",
     "JUnit.QueueTest.executor": "Run",
     "JUnit.QueueTest.testContains.executor": "Run",
@@ -196,7 +435,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/home/raul/ReposUPB/EstructuraDeDatos/Implementacion01Collection/src/test/java",
-    "last_opened_file_path": "/home/raul/ReposUPB/workspaces.edu.ds",
+    "last_opened_file_path": "/home/raul/ReposUPB/Proyecto-de-Aula-Wellness-Oasis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -207,12 +446,13 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
+    "settings.editor.selected.configurable": "editor.preferences.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="raul.Parcial1.BagManager" />
       <recent name="raul.SGTTP.Model.repository" />
       <recent name="raul.SGTTP.shared.filejsonadapter" />
     </key>
@@ -224,20 +464,20 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="raul.Model.noLineales.binTree" />
+      <recent name="raul.Parcial1.BagManager" />
       <recent name="raul.Model.linkedlist.doubly.circular" />
       <recent name="raul.Model.priorityqueue" />
       <recent name="raul.Model.queue.list" />
-      <recent name="raul.Model.queue.array" />
-      <recent name="raul.Model.linkedlist.doubly" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="raul.EjercicioPractica.Main" />
+  <component name="RunManager" selected="JUnit.BinTreeTest.testDelete">
+    <configuration name="BinTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="raul.Model.noLineales.binTree.BinTreeTest" />
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.EjercicioPractica.*" />
+          <option name="PATTERN" value="raul.Model.noLineales.binTree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -245,89 +485,88 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PolyOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="raul.Parcial1.POLY.PolyOperations" />
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.linkedlist.doubly.*" />
+          <option name="PATTERN" value="raul.Parcial1.POLY.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.linkedlist.doubly" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.linkedlist.doubly.LinkedListTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementacion01Collection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="raul.Model.noLineales.binTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="raul.Model.noLineales.binTree" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.noLineales.binTree.BinTreeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.testSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinTreeTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.linkedlist.doubly.*" />
+          <option name="PATTERN" value="raul.Model.noLineales.binTree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.linkedlist.doubly" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.linkedlist.doubly.LinkedListTest" />
-      <option name="METHOD_NAME" value="testSet" />
+      <option name="PACKAGE_NAME" value="raul.Model.noLineales.binTree" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.noLineales.binTree.BinTreeTest" />
+      <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriorityQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinTreeTest.testPreOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion01Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="raul.Model.priorityqueue.*" />
+          <option name="PATTERN" value="raul.Model.noLineales.binTree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.priorityqueue" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.priorityqueue.PriorityQueueTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PriorityQueueTest.testExtract" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Implementacion01Collection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="raul.Model.priorityqueue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="raul.Model.priorityqueue" />
-      <option name="MAIN_CLASS_NAME" value="raul.Model.priorityqueue.PriorityQueueTest" />
-      <option name="METHOD_NAME" value="testExtract" />
+      <option name="PACKAGE_NAME" value="raul.Model.noLineales.binTree" />
+      <option name="MAIN_CLASS_NAME" value="raul.Model.noLineales.binTree.BinTreeTest" />
+      <option name="METHOD_NAME" value="testPreOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.PriorityQueueTest.testExtract" />
-      <item itemvalue="JUnit.LinkedListTest (1)" />
-      <item itemvalue="JUnit.LinkedListTest.testSet" />
-      <item itemvalue="JUnit.PriorityQueueTest" />
+      <item itemvalue="Application.BinTreeTest" />
+      <item itemvalue="Application.PolyOperations" />
+      <item itemvalue="JUnit.BinTreeTest" />
+      <item itemvalue="JUnit.BinTreeTest.testDelete" />
+      <item itemvalue="JUnit.BinTreeTest.testPreOrder" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.PriorityQueueTest" />
-        <item itemvalue="JUnit.PriorityQueueTest.testExtract" />
-        <item itemvalue="JUnit.LinkedListTest (1)" />
-        <item itemvalue="JUnit.LinkedListTest.testSet" />
+        <item itemvalue="JUnit.BinTreeTest.testDelete" />
+        <item itemvalue="JUnit.BinTreeTest" />
+        <item itemvalue="JUnit.BinTreeTest.testPreOrder" />
+        <item itemvalue="Application.BinTreeTest" />
+        <item itemvalue="Application.PolyOperations" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -406,6 +645,44 @@
       <workItem from="1710377065728" duration="3901000" />
       <workItem from="1710426782322" duration="475000" />
       <workItem from="1710427264430" duration="8353000" />
+      <workItem from="1710524638762" duration="1667000" />
+      <workItem from="1710617954388" duration="3364000" />
+      <workItem from="1710647069970" duration="667000" />
+      <workItem from="1710812881156" duration="635000" />
+      <workItem from="1710864808833" duration="243000" />
+      <workItem from="1710868796802" duration="18000" />
+      <workItem from="1710881792354" duration="1222000" />
+      <workItem from="1710894377240" duration="12157000" />
+      <workItem from="1710949567847" duration="317000" />
+      <workItem from="1710956088876" duration="2203000" />
+      <workItem from="1710958573674" duration="2391000" />
+      <workItem from="1710962032197" duration="3427000" />
+      <workItem from="1710965718793" duration="1447000" />
+      <workItem from="1710977015905" duration="1203000" />
+      <workItem from="1710978280325" duration="30000" />
+      <workItem from="1710979007745" duration="150000" />
+      <workItem from="1710979173867" duration="1166000" />
+      <workItem from="1710986994632" duration="3743000" />
+      <workItem from="1710990972426" duration="2919000" />
+      <workItem from="1711020797439" duration="5953000" />
+      <workItem from="1711027191062" duration="9319000" />
+      <workItem from="1711048456914" duration="3493000" />
+      <workItem from="1711214630356" duration="19000" />
+      <workItem from="1712263590735" duration="1004000" />
+      <workItem from="1712268526418" duration="1915000" />
+      <workItem from="1712417976266" duration="9000" />
+      <workItem from="1712669696684" duration="722000" />
+      <workItem from="1712696639015" duration="813000" />
+      <workItem from="1712697465602" duration="136000" />
+      <workItem from="1712697726512" duration="2986000" />
+      <workItem from="1712705384613" duration="211000" />
+      <workItem from="1712863719743" duration="1794000" />
+      <workItem from="1712865771215" duration="3734000" />
+      <workItem from="1712933891592" duration="2002000" />
+      <workItem from="1713275248378" duration="2917000" />
+      <workItem from="1713290918012" duration="20000" />
+      <workItem from="1713296190510" duration="903000" />
+      <workItem from="1713406926564" duration="4214000" />
     </task>
     <task id="LOCAL-00001" summary="Implementacion de Collection hasta AbstractCollection.java, 2 metodos presentan errores, se debe solucionar la implementacion de Iterator.java en AbstractCollection.java">
       <option name="closed" value="true" />
